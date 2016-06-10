@@ -1,0 +1,122 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <title> Sahusoft</title>
+      <link href="../static/app.css" rel="stylesheet">
+      <link href="../static/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body data-spy="scroll" data-target=".sidenav" class="homePage">
+      <div class="content-wrap" id="fullpage">
+         <section class="main-section" itemscope="" itemtype="//schema.org/Organization">
+            <section class="main-container">
+               <div id="contact" class="section">
+                  <div class="green-bg slide about">
+                     <div class="clearfix content-area less-pad">
+                        <div class="heading no-m-b">
+                           <h2 class="title">Contact Us</h2>
+
+
+                           {% if user.is_authenticated %}
+                               <p>Welcome, {{ user.username }}  <a href="{% url 'accounts:logout' %}">[logout]</a></p>
+                           {% else %}
+                               <p>Welcome, Guest <a href="{% url 'accounts:login' %}">[login]</a></p>
+                           {% endif %}
+
+                           {% block content %}
+                           {% endblock %}
+
+
+                           <div class="social-links">
+                              <a href="//www.facebook.com/sahusoft" target="_blank"><i class="fa fa-facebook"></i></a>
+                              <a href="//twitter.com/sahusoftweb" target="_blank"><i class="fa fa-twitter"></i></a>
+                              <a href="//plus.google.com/u/0/+Sahusoft/about" target="_blank"><i class="fa fa-google-plus"></i></a>
+                              <a href="//www.linkedin.com/company/sahusoft-india-pvt-ltd" target="_blank"><i class="fa fa-linkedin"></i></a>
+                           </div>
+                        </div>
+                        <div class="about-wrap text-center" id="about-details">
+                           <div class="text-right team-img-wrap team-img-wrap-left  wow fadeInRight animated" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInRight;">
+                              <div class="team-img">
+                                 <a href="javascript:void(0);" class="team-member-img" data-id="#logo">
+                                    <h3>Sahusoft India Pvt. Ltd.</h3>
+                                 </a>
+                                 <address itemscope="" itemtype="//schema.org/PostalAddress"><span itemprop="streetAddress">#6, 11th Main, 39th Cross,<br>
+                                    Jayanagar 4th T Block,</span> Bengaluru <span itemprop="postalCode">560041</span><br><span itemprop="addressRegion">Karnataka</span>, India
+                                 </address>
+                                 <p><a href="https://www.google.co.in/maps/place/Sahusoft+India+Pvt.+Ltd./@12.920654,77.586024,17z/data=!4m7!1m4!3m3!1s0x39ed10fdc0c4f045:0x25c1e442034ef34!2sSahusoft+India+Pvt.+Ltd.!3b1!3m1!1s0x39ed10fdc0c4f045:0x25c1e442034ef34" target="_blank"><i class="fa fa-map-marker fa-lg fa-block"></i> &nbsp;Google Map</a></p>
+                                 <p itemprop="telephone"><i class="icon-tty"></i> <span> &nbsp;+91 80 409 74929</span></p>
+                                 <p><i class="icon-call"></i> <small><span> &nbsp;+91 9740962121</span></small></p>
+                              </div>
+                           </div>
+                           <div class="text-left left-wrap team-img-wrap team-img-wrap-right wow fadeInLeft show-about-sm animated" data-wow-delay="800ms" style="visibility: visible; animation-delay: 800ms; animation-name: fadeInLeft;">
+                              <div class="team-img ">
+                                 <a href="javascript:void(0);" class="team-member-img b-r-t-l" data-id="#logo">
+                                    <h3>Sahusoft UK Ltd.</h3>
+                                 </a>
+                                 <address itemscope="" itemtype="//schema.org/PostalAddress">
+                                    <span itemprop="streetAddress">7 Bickleigh House, Frogwell Close,</span><br>London <span itemprop="postalCode">N15 6ED</span><br>
+                                    England, United Kingdom
+                                 </address>
+                                 <p><a href="https://www.google.co.uk/maps/place/Sahusoft+UK+Limited/@51.577552,-0.086996,17z/data=!3m1!4b1!4m2!3m1!1s0x48761c7348fa6eef:0xf91093b262940f7a" target="_blank"><i class="fa fa-map-marker fa-lg fa-block"></i> &nbsp;Google Map</a></p>
+                                 <p itemprop="telephone"><i class="icon-tty"></i> <span> &nbsp;+44 2088099260</span></p>
+                                 <p><i class="icon-call"></i> <small><span> &nbsp;+44 7424797407</span></small></p>
+                              </div>
+                           </div>
+                           <div class="about-section text-center wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                              <div class="header-section"></div>
+                              <div class="image-section">
+                                 <a href="javascript:void(0);" class="about-display-image" id="logo-img" style="display: inline;">
+                                 <img src="images/logo-icon-lg.png" width="80" alt="Sahusoft" title="Sahuspft">
+                                 </a>
+                              </div>
+                              <div class="content-section">
+                                 <div id="logo" class="display-content" style="display: none;">
+                                    <h3 class="text-bold">Sahusoft</h3>
+                                    <p class="text-primary">We create awesome apps!</p>
+                                    <div class="text-section padder-v">
+                                       <p>Sahusoft is a creative technological company. We love to create things. We believe that technology doesn’t stand alone but using it at the right place with a social and artistic approach can fill the gaps. We have designed few of the finest web apps which includes MeowFoto, MyLifeIsOnline and utoochat. We are not in a race, we just do our best!</p>
+                                    </div>
+                                 </div>
+                                 <div id="contact-form" class="display-content" style="display: block;">
+                                    <form action="//sahusoft.com" method="POST" id="contact-us-form" class="form-horizontal" role="form" name="contact_form">
+                                       <br><br>
+                                       <div class="form-group">
+                                          <div class="col-xs-12"><input id="contact-name" type="text" name="name" value="" class="form-control" placeholder="Name"></div>
+                                       </div>
+                                       <div class="form-group">
+                                          <div class="col-xs-12"><input id="contact-email" type="email" name="email" value="" class="form-control" required="" placeholder="Email"></div>
+                                       </div>
+                                       <div class="form-group">
+                                          <div class="col-xs-12"><textarea id="contact-message" class="form-control" rows="6" name="message" required="" placeholder="Message"></textarea></div>
+                                       </div>
+                                       <div class="form-group">
+                                          <div class="col-xs-12">
+                                             <button type="submit" class="btn btn-default pull-right">Submit</button>
+                                          </div>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="text-left left-wrap team-img-wrap team-img-wrap-right wow fadeInLeft hide-about-sm animated" data-wow-delay="800ms" style="visibility: visible; animation-delay: 800ms; animation-name: fadeInLeft;">
+                              <div class="team-img ">
+                                 <a href="javascript:void(0);" class="team-member-img b-r-t-l" data-id="#logo">
+                                    <h3>Sahusoft UK Ltd.</h3>
+                                 </a>
+                                 <address>7 Bickleigh House, Frogwell Close,<br>London N15 6ED<br>
+                                    England, United Kingdom
+                                 </address>
+                                 <p><a href="https://www.google.co.uk/maps/place/Sahusoft+UK+Limited/@51.577552,-0.086996,17z/data=!3m1!4b1!4m2!3m1!1s0x48761c7348fa6eef:0xf91093b262940f7a" target="_blank"><i class="fa fa-map-marker fa-lg fa-block"></i> &nbsp;Google Map</a></p>
+                                 <p><i class="icon-tty"></i> <span>&nbsp;+44 2088099260</span></p>
+                                 <p><i class="icon-call"></i> <small><span>&nbsp;+44 7424797407</span></small></p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </section>
+      </div>
+   </body>
+</html>

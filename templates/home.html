@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+{% block extra_head %}
+{% endblock %}
+
+{% block content %}
+    <legend>
+        <h1 style="margin-left: 73px;">Welcome {{ user.username }}</h1>
+        {% if user.is_superuser %}
+            <h1 style="margin-left: 73px;">You are Admin user and can see advance options.</h1>
+        {% else %}
+            <h1 style="margin-left: 73px;">You are  Recruiter and can see basic options only.</h1>
+        {% endif %}
+    </legend></br>
+{% endblock %}

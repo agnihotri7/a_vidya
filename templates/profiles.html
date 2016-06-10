@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+
+{% block title %} Profile {% endblock %}
+{% block extra_head %}
+{% endblock %}
+
+{% block content %}
+    {% load myapp_tags %}
+    <div id="wrapper">
+        <div id="page-wrapper"><br>
+            <div class="panel panel-default">
+                <div class="panel-heading">Profiles
+                </div>
+                <div class="panel-body">
+                    <form action="." method="GET" class="form-inline" role="form" style="margin-top:10px;">
+                        {% for field_name, field_value in request.GET.iteritems %}
+                            <input type="hidden" name="{{ field_name }}" class="form-control" value="{{ field_value }}">
+                        {% endfor %}
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="caf-top-text">
+                                    <div class="how-work-box">
+                                        <div class="how-work-text active" style="width: 20%; float: left; height: 60px;">
+                                            <label for="inputsecondary_source" class="col-sm-4 control-label">Skills:</label>
+                                            <select name="skills" id="skill" class="form-control primary_filter">
+                                                {% if query.skills %}
+                                                    <option value="">-----------------------------</option>
+                                                    {% for s in skills %}
+                                                        {% if s.id|slugify == query.skills|slugify %}
+                                                            <option value="{{ s.id }}" selected>{{ s.name }}</option>
+                                                        {% else %}
+                                                            <option value="{{ s.id }}">{{ s.name }}</option>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                {% else %}
+                                                    <option value="">-----------------------------</option>
+                                                    {% for s in skills %}
+                                                        <option value="{{ s.id }}">{{ s.name }}</option>
+                                                    {% endfor %}
+                                                {% endif %}
+                                            </select>
+                                        </div>
+                                        <div class="how-work-text" style="width: 20%; float: left;">
+                                            <label for="inputsecondary_source" class="col-sm-4 control-label">Experience:</label>
+                                            <select name="experience" id="experience" class="form-control primary_filter">
+                                                <option value="">-----------------------------</option>
+                                                <option value="0-1" {% if query.experience == '0-1' %}selected{% endif %}>0.0 - 1.0 Yr</option>
+                                                <option value="1-2"{% if query.experience == '1-2' %}selected{% endif %}>1.0 - 2.0 Yr</option>
+                                                <option value="2-3"{% if query.experience == '2-3' %}selected{% endif %}>2.0 - 3.0 Yr</option>
+                                                <option value="3-4"{% if query.experience == '3-4' %}selected{% endif %}>3.0 - 4.0 Yr</option>
+                                                <option value="4-5"{% if query.experience == '4-5' %}selected{% endif %}>4.0 - 5.0 Yr</option>
+                                                <option value="5-6"{% if query.experience == '5-6' %}selected{% endif %}>5.0 - 6.0 Yr</option>
+                                                <option value="6-7"{% if query.experience == '6-7' %}selected{% endif %}>6.0 - 7.0 Yr</option>
+                                                <option value="7-8"{% if query.experience == '7-8' %}selected{% endif %}>7.0 - 8.0 Yr</option>
+                                                <option value="8-9"{% if query.experience == '8-9' %}selected{% endif %}>8.0 - 9.0 Yr</option>
+                                                <option value="9-10"{% if query.experience == '9-10' %}selected{% endif %}>9.0 - 10.0 Yr</option>
+                                                <option value="10-15"{% if query.experience == '10-15' %}selected{% endif %}>10.0 - 15.0 Yr</option>
+                                            </select>
+                                        </div>
+                                        <div class="how-work-text" style="width: 20%; float: left;">
+                                            <label for="location" class="col-sm-4 control-label">Location:</label>
+                                            <select name="location" id="location" class="form-control primary_filter">
+                                                {% if query.location %}
+                                                    <option value="">-----------------------------</option>
+                                                    {% for c in cities %}
+                                                        {% if c.id|slugify == query.location|slugify %}
+                                                            <option value="{{ c.id }}" selected>{{ c.name }}</option>
+                                                        {% else %}
+                                                            <option value="{{ c.id }}">{{ c.name }}</option>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                {% else %}
+                                                    <option value="">-----------------------------</option>
+                                                    {% for c in cities %}
+                                                        <option value="{{ c.id }}">{{ c.name }}</option>
+                                                    {% endfor %}
+                                                {% endif %}
+                                            </select>
+                                        </div>
+                                        <div class="how-work-text" style="width: 20%; float: left;">
+                                            <label for="inputsecondary_source" class="col-sm-4 control-label">CTC:</label>
+                                            <select name="ctc" id="ctc" class="form-control primary_filter">
+                                                <option value="">-----------------------------</option>
+                                                <option value="0-1" {% if query.ctc == '0-1' %}selected{% endif %}>0.0 - 1.0 LPA</option>
+                                                <option value="1-2" {% if query.ctc == '1-2' %}selected{% endif %}>1.0 - 2.0 LPA</option>
+                                                <option value="2-3" {% if query.ctc == '2-3' %}selected{% endif %}>2.0 - 3.0 LPA</option>
+                                                <option value="3-4" {% if query.ctc == '3-4' %}selected{% endif %}>3.0 - 4.0 LPA</option>
+                                                <option value="4-5" {% if query.ctc == '4-5' %}selected{% endif %}>4.0 - 5.0 LPA</option>
+                                                <option value="5-6" {% if query.ctc == '5-6' %}selected{% endif %}>5.0 - 6.0 LPA</option>
+                                                <option value="6-7" {% if query.ctc == '6-7' %}selected{% endif %}>6.0 - 7.0 LPA</option>
+                                                <option value="7-8" {% if query.ctc == '7-8' %}selected{% endif %}>7.0 - 8.0 LPA</option>
+                                                <option value="8-9" {% if query.ctc == '8-9' %}selected{% endif %}>8.0 - 9.0 LPA</option>
+                                                <option value="9-10" {% if query.ctc == '9-10' %}selected{% endif %}>9.0 - 10.0 LPA</option>
+                                                <option value="10-15" {% if query.ctc == '10-15' %}selected{% endif %}>10.0 - 15.0 LPA</option>
+                                            </select>
+                                        </div>
+                                        <div class="how-work-text" style="width: 20%; float: left;">
+                                            <label for="inputsecondary_source" class="col-sm-4 control-label">Designation:</label>
+                                            <select name="designation" id="designation" class="form-control primary_filter">
+                                               <option value="">-----------------------------</option>
+                                              {% if query.designation %}
+                                                  {% for d in designations %}
+                                                      {% if d.id|slugify == query.designation|slugify %}
+                                                          <option value="{{ d.id }}" selected>{{ d.name }}</option>
+                                                      {% else %}
+                                                          <option value="{{ d.id }}">{{ d.name }}</option>
+                                                      {% endif %}
+                                                  {% endfor %}
+                                              {% else %}
+                                                  <option value="">-----------------------------</option>
+                                                  {% for d in designations %}
+                                                      <option value="{{ d.id }}">{{ d.name }}</option>
+                                                  {% endfor %}
+                                              {% endif %}
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Apply Filter</button>
+                    </form>
+                </div>
+                {% if profiles %}
+                    <table class="table table-bordered">
+                        <thead>
+                           <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Mobile</th>
+                                <th>Email</th>
+                                <th>Resume</th>
+                                <th>CTC</th>
+                                <th>Designation</th>
+                                <th>Current City</th>
+                                <th>Experience</th>
+                                <th>Skills</th>
+                                <th>
+                                  {% if user|can_download_profiles %}
+                                    <a href="/profiles/?download=True&skills={{query.skills}}&experience={{query.experience}}&location={{query.location}}&ctc={{query.ctc}}&designation={{query.designation}}" target="_blank" class="btn btn-success pull-right fetch"><i class="fa fa-plus fa-fw"></i> Download</a>
+                                  {% endif %}
+
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            {% for profile in profiles %}
+                                <tr>
+                                    <td>{{ profile.sno }}</td>
+                                    <td>{{ profile.name }}</td>
+                                    <td>{{ profile.mobile }}</td>
+                                    <td>{{ profile.email }}</td>
+                                    <td>{{ profile.get_resume_display }}</td>
+                                    <td>{{ profile.ctc }} LPA</td>
+                                    <td>{{ profile.current_designation.name }}</td>
+                                    <td>{{ profile.current_city.name }}</td>
+                                    <td>{{ profile.experience }} Yr</td>
+                                    <td>{{ profile.get_skills }}</td>
+                                    {% if user.is_superuser %}
+                                      <td><a href="/admin/myapp/profiles/{{profile.id}}/" target="_blank" class="btn btn-success pull-right fetch"><i class="fa fa-plus fa-fw"></i> Edit</a></td>
+                                    {% endif %}
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <div class="panel-footer">
+                        {% if profiles and profiles.paginator.num_pages >= 1 %}
+                            <!-- <nav> -->
+                              <ul class="pagination" style="margin: 0px 0;margin-bottom: -7px;">
+                                {% if profiles.has_previous %}
+                                    <li>
+                                        <a href="?page={{ profiles.previous_page_number }}{% for key,value in request.GET.iteritems %}{% if key != 'page' %}&{{ key }}={{ value }}{% endif %}{% endfor %}" aria-label="Previous">
+                                          <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                {% endif %}
+                                <li class="active">
+                                  <span>{{ profiles.number }} of {{ profiles.paginator.num_pages }}</span>
+                                </li>
+
+                                {% if profiles.has_next %}
+                                    <li>
+                                      <a href="?page={{ profiles.next_page_number }}{% for key,value in request.GET.iteritems %}{% if key != 'page' %}&{{ key }}={{ value }}{% endif %}{% endfor %}" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                      </a>
+                                    </li>
+                                {% endif %}
+                              </ul>
+                            <!-- </nav> -->
+                        {% endif %}
+
+                    </div>
+                {% else %}
+                    <div class="panel-footer">
+                        <h1>No profile matching.</h1>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% block extrascripts %}
+
+    {% endblock %}
+{% endblock %}

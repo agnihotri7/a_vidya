@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row login-form">
+        {% if form.errors %}
+          <div class="row" style="margin-top: 0px;margin-left: -5px;">
+            <div style="border: 1px #e4e4e4 solid;">
+            {% for field in form %}
+                {% for error in field.errors %}
+                    <div class="alert alert-error">
+                        <strong style="color:red;">{{ field.name }} - {{ error|escape }}</strong>
+                    </div>
+                {% endfor %}
+            {% endfor %}
+            {% for error in form.non_field_errors %}
+                <div class="alert alert-error">
+                    <strong style="color:red;">{{ error|escape }}</strong>
+                </div>
+            {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+       <div class="col-md-6" style="border-right:1px #ccc solid;">
+          <form name="form.signupForm" class="css-form" novalidate="" method="post" action="/accounts/register/">
+             {% csrf_token %}
+             <div class="control-group">
+                <input name="username" class="prodo-form-input-signup form-control" type="text" placeholder="Enter username" required>
+                <br>
+                <input name="email" class="prodo-form-input-signup form-control" type="email" placeholder="Enter Email" required>
+                <br>
+                <input name="password" class="prodo-form-input-signup form-control" type="password" placeholder="Enter Password" required>
+                <br>
+                <button type="submit" class="lmap-btn-primary btn btn-primary btn-sm btn-block"><i class="fa fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;Join us now!</button>
+             </div>
+          </form>
+       </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+{% endblock %}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Home {% endblock %}</title>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link href="{% static 'css/common.css' %}" rel="stylesheet">
+    <link href="{% static 'css/itil.css' %}" rel="stylesheet">
+    <!-- <link href="{% static 'css/login.css' %}" rel="stylesheet"> -->
+    {% block extra_head %}
+    {% endblock %}
+
+  </head>
+
+  <body class="">
+    <div class="se-pre-con"></div>
+
+    <div id="wrap">
+      <div class="header">
+        <div class="wrapper">
+          <div class="wrapper-shadow" id="top-nav">
+            <div class="brand">
+              <a href="/" class="logo">
+                <span class="vertical-align logo-image">
+                  <i></i>
+                  <img class="logo-image" alt="Logo" data-type="logo" src="{% static 'img/logo.png' %}">
+                </span>
+              </a>
+              <a href="/" class="logo_text"></a>
+            </div>
+            <div class="header-wrapper">
+              {% if user.is_authenticated %}
+                <!-- <p>Welcome {{ user.username }}</p> -->
+                <a href="{% url 'logout' %}">Logout</a>
+              {% else %}
+                <p style="color:white;">Test</p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="top_nav_bg">
+          <div class="wrapper">
+            <div class="wrapper-shadow" id="top-nav1">
+              <div class="top_nav">
+                <div class="nav_right">
+                  <!-- <p>Test</p> -->
+                </div>
+                <ul class="header-tabs">
+                  <li class="active" data-tab-name="dashboard">
+                    <span></span>
+                    <a href="/" class="icon-gauge">Dashboard</a>
+                  </li>
+                  <li class="" data-tab-name="tickets"><span></span>
+                    <a href="{% url 'profiles' %}" class="icon-ticket" data-keybinding="g t" data-parallel-placeholder="#ticket-leftFilter" data-parallel-url="/helpdesk/tickets/filter_options" data-pjax="#body-container">Profiles</a>
+                  </li>
+                  <li class="" data-tab-name="solutions"><span></span>
+                    {% if user.is_superuser %}
+                      <a href="/admin/" target='_blank' class="icon-book" data-keybinding="g s" data-pjax="#body-container">Advance Options</a>
+                    {% endif %}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content" id="body-container">
+        <div class="wrapper">
+          <div class="wrapper-shadow shadow">
+            <!-- <div id="inner"> -->
+              <div class="pagearea">
+                {% block content %}
+                {% endblock %}
+              </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div id="footer" class="wrapper">
+        <div class="wrapper-shadow">
+          <div class="footer-content">
+            <a href="#">Submit Feedback</a>
+            <span class="muted"> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;</span>
+            <a href="#">Browse Community</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ STATIC_URL }}js/script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    -->
+
+    {% block body_foot %}
+    {% endblock %}
+
+  </body>
+</html>

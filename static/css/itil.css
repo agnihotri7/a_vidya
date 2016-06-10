@@ -1,0 +1,5259 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,500);
+body {
+    background: #f9f9f9;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 0;
+    font-weight: 400;
+    color: #555;
+    line-height: 22px
+}
+.tree_struct .select2-results .level0,
+.itil-probe .select2-results .level0 {
+    padding-left: 0
+}
+.tree_struct .select2-results .level1,
+.itil-probe .select2-results .level1 {
+    padding-left: 15px
+}
+.tree_struct .select2-results .level2,
+.itil-probe .select2-results .level2 {
+    padding-left: 30px
+}
+.tree_struct .select2-results .level3,
+.itil-probe .select2-results .level3 {
+    padding-left: 45px
+}
+.tree_struct .select2-results .level4,
+.itil-probe .select2-results .level4 {
+    padding-left: 60px
+}
+#new_expense_form {
+    float: left;
+    width: 100%;
+    line-height: 20px;
+    color: #555;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    margin-bottom: 10px
+}
+#new_expense_form .ui-form {
+    border: 0!important
+}
+.config_item_expenses_view {
+    width: 100%
+}
+.config_item_expenses_view tr {
+    border-bottom: 1px solid #ccc
+}
+.config_item_expenses_view td {
+    padding: 5px
+}
+#dep_list .no_data {
+    font-weight: 300;
+    font-size: 17px;
+    color: #999;
+    margin: 30px 0 0 0;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif
+}
+#add-depreciation {
+    background-color: #f9f9f9
+}
+#add-depreciation .inline-form-panel {
+    height: 290px
+}
+.extra {
+    background-color: #f9f9f9
+}
+#footer .footer-content {
+    text-align: right!important;
+    padding-right: 15px
+}
+h3.title,
+h3.sub_title,
+h3.title-band {
+    font-size: 22px;
+    font-weight: 300;
+    color: #aaa
+}
+.required_star {
+    position: inherit!important;
+    font-size: 12px!important
+}
+#inner {
+    background: #f9f9f9
+}
+#inner .sidebar .sidepanel {
+    word-break: break-word;
+    background: transparent;
+    border: 0;
+    box-shadow: none
+}
+#inner .sidebar .sidepanel i.common-icon-help+* {
+    margin-right: 15px
+}
+#inner .sidebar .sidepanel i.common-icon-help+h3+p {
+    margin-right: 15px
+}
+#inner .sidebar #preview .sidepanel {
+    background: 0
+}
+.pagearea {
+    border-top: 0
+}
+.header {
+    background: #FFF
+}
+a {
+    color: #09c
+}
+a:hover {
+    color: #007399
+}
+ul.header-tabs li {
+    height: 34px
+}
+ul.header-tabs li a {
+    height: 32px;
+    padding: 9px 10px 10px;
+    position: relative;
+    -moz-transform: rotate(0.0deg);
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 500
+}
+ul.header-tabs li a:before {
+    display: inline-block;
+    font-family: freshicons;
+    font-weight: normal;
+    padding-right: 3px;
+    font-size: 10px
+}
+ul.header-tabs li a.icon-shield:before,
+ul.header-tabs li a.icon-book:before {
+    font-size: 9px
+}
+ul.header-tabs li span {
+    height: 0;
+    margin-bottom: -3px
+}
+a.new_ticket {
+    padding: 7px 20px 5px
+}
+a.new_ticket span:before {
+    top: 5px
+}
+.nav_search {
+    margin-top: 1px
+}
+.ssportal_filters {
+    margin: 0!important
+}
+.posrel {
+    position: relative
+}
+#active_filter,
+.ticket-leftcol h3.title {
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    color: #555;
+    font-weight: 700
+}
+.ticket-leftcol h3.title {
+    font-size: 20px;
+    margin-top: 15px;
+    padding-bottom: 0
+}
+#problem-toolbar,
+#ticket-toolbar,
+#release-toolbar,
+#change-toolbar,
+.admin-page #list-table {
+    border-bottom: 2px solid #eee
+}
+input.button,
+input.button:hover,
+input.button[disabled]:hover {
+    padding: 3px 8px;
+    font-weight: 400
+}
+.btn.disabled,
+.btn[disabled] {
+    color: #888
+}
+#tickets-expanded td {
+    background: 0
+}
+#tickets-expanded tr.active td,
+#tickets-expanded tr.active:hover td {
+    background: #f4fcff
+}
+#tickets-expanded td h3 {
+    margin-bottom: 5px;
+    line-height: 25px
+}
+#tickets-expanded td h3 a {
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    color: #4d769f!important;
+    font-weight: 400
+}
+#tickets-expanded td h3.new_ticket a {
+    font-weight: 700
+}
+#tickets-expanded td .ticket_subject div {
+    color: #aaa!important
+}
+#problem-list .check,
+#change-list .check,
+#release-list .check {
+    padding: 12px 10px 1px 8px
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    #problem-list .check,
+    #change-list .check,
+    #release-list .check {
+        padding: 7px 10px 1px 8px
+    }
+}
+input,
+select {
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    color: #666
+}
+input[type="text"],
+select,
+input.text {
+    color: #666
+}
+.input-icon {
+    background: 0;
+    border: 1px solid red;
+    content: "\e0b0";
+    font-family: 'freshicons';
+    font-size: 20px;
+    padding: 5px
+}
+#problem-toolbar tr th.check,
+#change-toolbar tr th.check,
+#release-toolbar tr th.check {
+    padding: 5px 10px 0
+}
+[class^="icon-"],
+[class*=" icon-"] {
+    width: auto!important;
+    background-image: none!important;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 1px;
+    vertical-align: text-top;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: 'freshicons'
+}
+.toolbar .button,
+a.icon-export,
+.approval_btn {
+    -moz-box-shadow: inset 0 1px 1px 0 #fff;
+    -webkit-box-shadow: inset 0 1px 1px 0 #fff;
+    box-shadow: inset 0 1px 1px 0 #fff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, white), color-stop(1, #f1f0f1))!important;
+    background: -moz-linear-gradient(top, white 5%, #f1f0f1 100%)!important;
+    background: -webkit-linear-gradient(top, white 5%, #f1f0f1 100%)!important;
+    background: -o-linear-gradient(top, white 5%, #f1f0f1 100%)!important;
+    background: -ms-linear-gradient(top, white 5%, #f1f0f1 100%)!important;
+    background: linear-gradient(to bottom, #fff 5%, #f1f0f1 100%)!important;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f1f0f1', GradientType=0);
+    background-color: #fff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    color: #7d7d7d;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 3px 8px;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #fff;
+    margin: 0 0 0 10px
+}
+.toolbar .button:hover,
+a.icon-export:hover,
+.approval_btn:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f1f0f1), color-stop(1, white))!important;
+    background: -moz-linear-gradient(top, #f1f0f1 5%, white 100%)!important;
+    background: -webkit-linear-gradient(top, #f1f0f1 5%, white 100%)!important;
+    background: -o-linear-gradient(top, #f1f0f1 5%, white 100%)!important;
+    background: -ms-linear-gradient(top, #f1f0f1 5%, white 100%)!important;
+    background: linear-gradient(to bottom, #f1f0f1 5%, #fff 100%)!important;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f1f0f1', endColorstr='#ffffff', GradientType=0);
+    background-color: #f1f0f1;
+    color: #666
+}
+.toolbar .button:active,
+a.icon-export:active,
+.approval_btn:active {
+    position: relative;
+    top: 1px
+}
+#ticket_pagination .prev_page,
+#ticket_pagination .next_page {
+    padding: 5px 10px
+}
+span.hideForList {
+    display: none
+}
+#tickets-expanded .name,
+#tickets-expanded .name-user {
+    padding-left: 0
+}
+#tickets-expanded td h3 {
+    line-height: 20px;
+    margin-bottom: 0
+}
+.itil_ticket_new {
+    float: right;
+    position: relative;
+    right: -7px;
+    top: -72px;
+    height: 13px;
+    width: 220px;
+    text-align: right
+}
+.itil_ticket_new .dropdown-menu li a {
+    text-align: left
+}
+.itil_ticket_new .btn-group {
+    float: right
+}
+.itil_ticket_new .extra_action_button {
+    float: right
+}
+#problem-toolbar .itil_ticket_new,
+#change-toolbar .itil_ticket_new,
+#release-toolbar .itil_ticket_new {
+    float: right;
+    position: relative;
+    right: -7px;
+    top: -72px;
+    height: 13px
+}
+.ititl_new_ticket {
+    -moz-box-shadow: inset 0 1px 1px 0 #e5fabe;
+    -webkit-box-shadow: inset 0 1px 1px 0 #e5fabe;
+    box-shadow: inset 0 1px 1px 0 #e5fabe;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #96cb62), color-stop(1, #7cb50b));
+    background: -moz-linear-gradient(top, #96cb62 5%, #7cb50b 100%);
+    background: -webkit-linear-gradient(top, #96cb62 5%, #7cb50b 100%);
+    background: -o-linear-gradient(top, #96cb62 5%, #7cb50b 100%);
+    background: -ms-linear-gradient(top, #96cb62 5%, #7cb50b 100%);
+    background: linear-gradient(to bottom, #96cb62 5%, #7cb50b 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#96cb62', endColorstr='#7cb50b', GradientType=0);
+    background-color: #96cb62;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #65970f;
+    display: inline-block;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 3px 8px;
+    text-decoration: none;
+    text-shadow: 0 1px 2px #3f5419
+}
+.ititl_new_ticket:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7cb50b), color-stop(1, #96cb62));
+    background: -moz-linear-gradient(top, #7cb50b 5%, #96cb62 100%);
+    background: -webkit-linear-gradient(top, #7cb50b 5%, #96cb62 100%);
+    background: -o-linear-gradient(top, #7cb50b 5%, #96cb62 100%);
+    background: -ms-linear-gradient(top, #7cb50b 5%, #96cb62 100%);
+    background: linear-gradient(to bottom, #7cb50b 5%, #96cb62 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#7cb50b', endColorstr='#96cb62', GradientType=0);
+    background-color: #7cb50b;
+    color: #fff
+}
+.ititl_new_ticket:active {
+    position: relative;
+    top: 1px
+}
+th.toolbar_right #export_tickets {
+    padding: 0 10px 0 0
+}
+a.icon-export {
+    display: inline;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    padding: 3px 8px
+}
+a.icon-export:before {
+    font-family: freshicons;
+    margin-right: 5px
+}
+label.item {
+    margin-bottom: 0;
+    color: #999;
+    font-weight: 400
+}
+#tickets-expanded .name .info-data .emphasize,
+#tickets-expanded .name-user .info-data .emphasize {
+    font-weight: 400;
+    color: #999
+}
+.sort-bar .nav-trigger {
+    font-size: 12px;
+    font-weight: 400
+}
+.nav-trigger b {
+    font-weight: 400
+}
+.view_filters .link-item {
+    padding: 20px 8px 5px 3px
+}
+.leftFilter .drop-right:after,
+.ssportal_filters .drop-right:after {
+    margin: 15px 3px 0 8px;
+    top: 17px;
+    right: 5px
+}
+#tickets-expanded .name .info-data,
+#tickets-expanded .name-user .info-data {
+    font-weight: 400
+}
+.offset {
+    font-size: 12px;
+    position: relative;
+    top: -4px;
+    float: right;
+    width: 165px;
+    margin-right: 70px
+}
+.offset b {
+    font-weight: 400
+}
+.quick-action:hover:after,
+.quick-action.selected:after {
+    margin: 5px 0 0;
+    right: 30px
+}
+#tickets-expanded .assign ul li {
+    margin: 0
+}
+.tickets .assign ul li.quick-action:hover .result,
+.tickets .assign ul li.quick-action.selected .result {
+    background: none repeat scroll 0 0 rgba(119, 119, 119, 0.1)
+}
+.rtCnt,
+.no-helpdesk,
+#errorExplanation,
+.flash_info {
+    border-radius: 0;
+    border-left: 1px solid #ddd!important;
+    border-right: 1px solid #ddd!important;
+    border-bottom: none!important;
+    box-shadow: none;
+    margin: 0
+}
+.reminders {
+    margin-top: 10px;
+    border-top: 1px solid #ddd
+}
+.itil_ticket_links {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 5px 5px;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 10px 0;
+    padding: 10px
+}
+.itil_ticket_links a {
+    display: inline-block;
+    margin-right: 10px
+}
+.reminders:before {
+    border: 0
+}
+.side-panel {
+    box-shadow: none;
+    border: 0;
+    background: transparent
+}
+.reminders h3.title,
+.todo h3.title {
+    color: #AAA;
+    font-weight: 300;
+    font-size: 22px;
+    border-bottom: 0
+}
+ul.activityfeed li .username {
+    font-weight: 400
+}
+.panel-row {
+    padding: 15px 0
+}
+.panel-row h4 {
+    font-weight: 400
+}
+.panel-row .help-text {
+    font-size: 12px
+}
+.slim-button {
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 5px 8px
+}
+.itil_create_new {
+    float: right;
+    height: 13px;
+    position: relative;
+    right: 0;
+    top: -25px
+}
+#problem-list .ticket_subject,
+#change-list .ticket_subject,
+#release-list .ticket_subject {
+    margin-top: -9px;
+    padding: 9px 0
+}
+.itil_tabs .commentbox ul.tabs {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    color: #999;
+    font-size: 16px;
+    height: 15px;
+    padding: 10px 10px 13px;
+    margin: 0
+}
+.itil_tabs .commentbox ul.tabs>li {
+    top: -9px
+}
+.itil_tabs .commentbox ul.tabs>li a {
+    border: 0;
+    background: #FFF
+}
+.itil_tabs_content .no_data {
+    color: #aaa
+}
+.itil_tabs_content .resolution_container {
+    background: transparent;
+    border: 0;
+    width: 95%
+}
+.itil_tabs_content .bottom {
+    background: none repeat scroll 0 0 #fff;
+    display: block;
+    margin: 0 -10px -10px;
+    padding: 10px
+}
+.itil_tabs_content .problem_type {
+    background: transparent;
+    border: 0
+}
+.itil_tabs_content .problem_type:last-child {
+    border-bottom: 1px dotted #DDD
+}
+.itil_tabs_content .problem_type:before {
+    color: #CCC;
+    content: '\f0da';
+    font-family: 'freshicons';
+    font-size: 14px;
+    left: 7px;
+    position: absolute;
+    top: 14px
+}
+.itil_tabs_content .problem_type h1 {
+    color: #666;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 3px 10px 5px
+}
+#backout_plan_file,
+#change_reason_file,
+#change_impact_file,
+#change_plan_file,
+#problem_symptom_file,
+#problem_cause_file,
+#problem_impact_file,
+#build_plan_file,
+#test_plan_file {
+    height: auto
+}
+select,
+input[type="file"] {
+    height: auto!important
+}
+.ticksymbol {
+    background: 0
+}
+.request_panel .absolute-button-container {
+    position: inherit
+}
+.reply_box {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0
+}
+#ReplyToTicketPublic {
+    margin: 20px
+}
+.request_panel {
+    border-bottom: 0;
+    padding: 0;
+    border-spacing: 0
+}
+h5.title {
+    font-weight: 400
+}
+#itil_note_2,
+#itil_note_3 {
+    border-left: none
+}
+#notice,
+#noticeajax {
+    box-shadow: 0 0 5px #DDD;
+    margin: 0;
+    position: absolute;
+    width: 96%;
+    z-index: 10000
+}
+#ticket_list_count {
+    vertical-align: top
+}
+.cab_list {
+    margin-top: 10px
+}
+.cab_list li {
+    padding: 5px 15px;
+    border-bottom: 1px solid #DDD;
+    min-height: 45px
+}
+.cab_list li .item_actions {
+    float: right;
+    position: relative;
+    right: 5px;
+    top: 14px;
+    visibility: hidden
+}
+.cab_list li:hover {
+    background: #fbfbfb
+}
+.cab_list li:hover .item_actions {
+    visibility: visible
+}
+.cab_list li:first-child {
+    border-top: 1px solid #DDD
+}
+.cab_list li:nth-child(odd) {
+    background: #f9f9f9
+}
+.cab_list li:nth-child(odd):hover {
+    background: #fbfbfb
+}
+.cab_list li:nth-child(even) {
+    background: #FFF
+}
+.cab_list li:nth-child(even):hover {
+    background: #fbfbfb
+}
+.cab_list li .cab_info {
+    font-size: 13px;
+    color: #555
+}
+#cab_form .item_list {
+    background: 0;
+    border: 0;
+    width: 100%
+}
+#cab_form .item_list li {
+    background: #f9f9f9;
+    border: 1px solid #fbfbfb;
+    margin-right: 5px
+}
+#cab_form .item_list li a.icon-minus {
+    color: #555;
+    font-size: 16px;
+    position: relative;
+    top: 8px;
+    display: inline-block
+}
+#cab_form .item_list li a.icon-minus:hover {
+    color: #888
+}
+#cab_form .item_list li b {
+    font-size: 14px;
+    top: 8px
+}
+#cab_form .item_list li:hover a.icon-minus {
+    visibility: visible
+}
+#cab_form .item_list h3 {
+    margin: 20px 0 10px
+}
+#cab_form .select2-container {
+    width: 200px
+}
+#cab_form #All_Agents b {
+    display: block
+}
+.button,
+.toolbar .toolbar_pagination_full a,
+.toolbar .toolbar_pagination_full span,
+.toolbar .toolbar_pagination_full .next_page,
+.toolbar .toolbar_pagination_full .prev_page,
+.toolbar_pagination .prev_page,
+.toolbar_pagination .next_page,
+.toolbar_pagination_full .prev_page,
+.toolbar_pagination_full .next_page,
+.slim-button,
+.admin_list li div.item_actions a,
+.content_list li div.item_actions a,
+.table-list li div.item_actions a {
+    font-weight: 400!important
+}
+#itil-notes #notes_container .conversation {
+    list-style: none outside none
+}
+#itil-notes #notes_container .commentbox {
+    padding: 0
+}
+#itil-notes #notes_container .conversation .avatar-wrap {
+    left: 0;
+    position: relative;
+    top: 0
+}
+#itil-notes #notes_container li {
+    margin-top: 5px
+}
+#itil-notes #notes_container li:first-child {
+    margin-top: 0
+}
+.source_problem:before,
+.source_change:before,
+.source_release:before {
+    color: #fff;
+    font-family: freshicons;
+    font-size: 16px;
+    position: relative;
+    top: 6px
+}
+.source_problem:before {
+    content: "\e001"
+}
+.source_change:before {
+    content: "\e053"
+}
+.source_release:before {
+    content: "\f0e7"
+}
+#link-ticket-to-change .link-options fieldset {
+    display: inline;
+    margin: 0 20px 0 0
+}
+#link_requested,
+#link_caused {
+    margin-right: 2px;
+    margin-top: 0
+}
+#link-ticket-to-change .link-options {
+    border-bottom: 1px solid #EEE
+}
+#link-ticket-to-change .link-results {
+    margin-left: 6px
+}
+.fd-menu {
+    margin-top: 5px
+}
+#cnt-note {
+    border-spacing: 0 10px
+}
+.property_list li label {
+    padding: 0
+}
+.itil-toolbar {
+    margin-left: 35px
+}
+.content .controls .control-left h2:hover {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    height: 21px;
+    line-height: 21px;
+    margin: 0 -10px;
+    overflow: hidden;
+    padding: 0 10px;
+    text-shadow: 0 1px 0 white;
+    word-break: break-all;
+    background: transparent
+}
+#original_request .commentbox {
+    background: #eafaff;
+    border: 2px solid #c6e7f1;
+    box-shadow: none
+}
+#original_request .commentbox:after {
+    border-color: rgba(255, 253, 248, 0) #eafaff rgba(255, 253, 248, 0) rgba(255, 253, 248, 0)
+}
+#original_request .commentbox:before {
+    border-color: rgba(204, 204, 204, 0) #c6e7f1 rgba(204, 204, 204, 0) rgba(204, 204, 204, 0)
+}
+.itil-tab-header {
+    color: #666;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 10px 0 10px 45px
+}
+.conversation_thread,
+.content .controls .control-left {
+    border-left: none
+}
+#itil-notes {
+    float: left;
+    width: 100%
+}
+.itil-planning {
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 30px;
+    float: left;
+    width: 90%;
+    position: relative;
+    left: -15px;
+    padding: 0
+}
+#tasks .itil-planning {
+    border-bottom: 0;
+    margin-bottom: 0;
+    width: 100%
+}
+#activity {
+    padding-bottom: 15px;
+    color: #aaa
+}
+#activity .activity_time {
+    display: inline-block
+}
+#activity .local_activities a {
+    word-break: break-all
+}
+#itil-notes .commentbox,
+#itil-notes .commentbox-gray {
+    background: 0;
+    border: 0
+}
+#itil-notes .commentbox:after,
+#itil-notes .commentbox:before {
+    border: 0
+}
+.hexagon {
+    background: #FFF;
+    border: 1px solid #e9e9e9;
+    border-radius: 50%;
+    float: left;
+    height: 43px;
+    left: -28px;
+    padding: 3px;
+    position: relative;
+    width: 43px;
+    clear: both
+}
+.hexagon-body {
+    border-radius: 50%;
+    height: 43px;
+    width: 43px
+}
+.hexagon-image:before {
+    color: #FFF;
+    font-size: 20px;
+    left: 11px;
+    position: relative;
+    top: 13px
+}
+.itil-content-title {
+    color: #999;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 10px
+}
+.itil-user-thumb img {
+    border-radius: 30px 30px 30px 30px;
+    height: 32px;
+    position: relative;
+    top: 2px;
+    width: 32px
+}
+.itil-user-thumb {
+    float: left;
+    margin-right: 5px
+}
+.itil-description,
+#itil-planning-form {
+    float: left;
+    width: 100%;
+    line-height: 20px;
+    color: #555;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    margin-bottom: 10px
+}
+.itil-description .ui-form,
+#itil-planning-form .ui-form {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    background: #f9f9f9
+}
+.itil-description .ui-form .redactor_box,
+#itil-planning-form .ui-form .redactor_box {
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    padding: 0 10px
+}
+.itil-description .ui-form .redactor_box .redactor_toolbar,
+#itil-planning-form .ui-form .redactor_box .redactor_toolbar {
+    background: 0;
+    border-bottom: 0
+}
+.itil-description .ui-form .redactor_editor,
+#itil-planning-form .ui-form .redactor_editor {
+    background: #FFF!important;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #888 inset!important
+}
+.itil-description .ui-form .redactor_editor:focus,
+#itil-planning-form .ui-form .redactor_editor:focus {
+    background: #FFF!important
+}
+.itil-description .ui-form .planning_buttons,
+#itil-planning-form .ui-form .planning_buttons {
+    margin-right: 1%;
+    margin-bottom: 1%
+}
+#add_analysis_form .ui-form,
+#edit_analysis_form .ui-form {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    background: #f9f9f9
+}
+#add_analysis_form .ui-form .redactor_box,
+#edit_analysis_form .ui-form .redactor_box {
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    padding: 0 10px
+}
+#add_analysis_form .ui-form .redactor_box .redactor_toolbar,
+#edit_analysis_form .ui-form .redactor_box .redactor_toolbar {
+    background: 0;
+    border-bottom: 0
+}
+#add_analysis_form .ui-form .redactor_editor,
+#edit_analysis_form .ui-form .redactor_editor {
+    background: #FFF!important;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #888 inset!important;
+    min-height: 100px
+}
+#add_analysis_form .ui-form .redactor_editor:focus,
+#edit_analysis_form .ui-form .redactor_editor:focus {
+    background: #FFF!important
+}
+#add_analysis_form .ui-form .planning_buttons,
+#edit_analysis_form .ui-form .planning_buttons {
+    margin-right: 1%;
+    margin-bottom: 1%
+}
+#itil-notes .ui-form,
+#ticket_approval_holder .ui-form {
+    border: 0;
+    border-radius: 0;
+    background: #f9f9f9;
+    box-shadow: none
+}
+#itil-notes .ui-form .redactor_box,
+#ticket_approval_holder .ui-form .redactor_box {
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    padding: 0
+}
+#itil-notes .ui-form .redactor_box .redactor_toolbar,
+#ticket_approval_holder .ui-form .redactor_box .redactor_toolbar {
+    background: 0;
+    border-bottom: 0
+}
+#itil-notes .ui-form .redactor_editor,
+#ticket_approval_holder .ui-form .redactor_editor {
+    background: #FFF!important;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #888 inset!important
+}
+#itil-notes .ui-form .redactor_editor:focus,
+#ticket_approval_holder .ui-form .redactor_editor:focus {
+    background: #FFF!important
+}
+#itil-notes .ui-form .planning_buttons,
+#ticket_approval_holder .ui-form .planning_buttons {
+    margin-right: 1%
+}
+#approval {
+    margin: -10px -20px 0
+}
+#approval .member-approval {
+    margin-top: -10px
+}
+#approval .member-approval:first-child {
+    margin-top: inherit
+}
+#approval .content-status {
+    padding: 5px 20px 0
+}
+#approval #ticket_approval_holder {
+    margin: 0
+}
+#approval .approval_sec_link {
+    margin: 5px 10px
+}
+.member-approval {
+    padding: 5px 20px 0
+}
+.member-approval .itil-user-thumb {
+    float: none;
+    margin-right: 0
+}
+.member-approval .itil-user-thumb .avatar-wrap {
+    margin-right: 5px
+}
+.member-approval .itil-user-thumb a:last-child {
+    display: inline-block;
+    width: 65%
+}
+#cab_sent .member-approval {
+    margin-top: -10px
+}
+#cab_sent .member-approval .itil-description {
+    margin-left: inherit
+}
+#cab_sent .member-approval .itil-user-thumb {
+    left: 35px
+}
+#cab_sent .member-approval .itil-user-thumb .avatar-wrap {
+    left: -30px!important
+}
+#cab_sent .member-approval .itil-user-thumb a:last-child {
+    width: 75%
+}
+#cab_sent .member-approval:first-child {
+    margin-top: 10px
+}
+.member-approval h2 {
+    font-weight: 500;
+    font-size: 14px
+}
+.member-approval:hover {
+    background-color: #f9f9f9
+}
+.member-approval .fixed-width-container {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    font-size: 13px;
+    font-weight: 300
+}
+.member-approval .fixed-width-container a:first-child {
+    margin-right: 5px
+}
+.member-approval .fixed-width-container .loading-small {
+    margin: 0 0 0 50%;
+    padding: 0
+}
+.member-approval .approval-action-link {
+    font-weight: normal;
+    color: #999
+}
+.member-approval .approval-action-link i {
+    color: #999;
+    padding-right: 1%
+}
+.member-approval .approval-action-link:hover {
+    color: #333
+}
+.member-approval .approval-action-link:hover i {
+    color: #333
+}
+.member-approval span {
+    color: #aaa;
+    font-weight: 300
+}
+.member-approval .span12 {
+    margin-left: .50%
+}
+.member-approval .span12 i {
+    padding-right: 2.0%
+}
+.member-approval .span12 .icon-cancel-circle2 {
+    margin-top: 3px
+}
+.member-approval .span12 .ficon-send-reminder {
+    vertical-align: bottom;
+    display: inline-block
+}
+a .member-approval .span12 .ficon-send-reminder {
+    display: inline-block
+}
+.member-approval .itil-description p {
+    word-wrap: break-word
+}
+.new_solution_article h3,
+.edit_solution_article h3 {
+    margin-left: 20px;
+    margin-bottom: 15px
+}
+.new_solution_article .form-horizontal,
+.edit_solution_article .form-horizontal {
+    border: 0;
+    background: #FFF;
+    width: 95%;
+    margin-left: 20px
+}
+.new_solution_article .form-horizontal input[type="text"],
+.new_solution_article .form-horizontal input.text,
+.edit_solution_article .form-horizontal input[type="text"],
+.edit_solution_article .form-horizontal input.text {
+    width: 98%
+}
+.new_solution_article .form-horizontal .redactor_box,
+.edit_solution_article .form-horizontal .redactor_box {
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    padding: 0 10px 10px
+}
+.new_solution_article .form-horizontal .redactor_box .redactor_toolbar,
+.edit_solution_article .form-horizontal .redactor_box .redactor_toolbar {
+    background: 0;
+    border-bottom: 0
+}
+.new_solution_article .form-horizontal .redactor_editor,
+.edit_solution_article .form-horizontal .redactor_editor {
+    background: #FFF!important;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #888 inset!important;
+    min-height: 100px
+}
+.new_solution_article .form-horizontal .redactor_editor:focus,
+.edit_solution_article .form-horizontal .redactor_editor:focus {
+    background: #FFF!important
+}
+.new_solution_article .form-horizontal .planning_buttons,
+.edit_solution_article .form-horizontal .planning_buttons {
+    margin-right: 1%;
+    margin-bottom: 1%
+}
+.new_solution_article .form-horizontal li.dropdown,
+.edit_solution_article .form-horizontal li.dropdown {
+    width: 33%
+}
+.new_solution_article .form-horizontal li.dropdown:last-child,
+.edit_solution_article .form-horizontal li.dropdown:last-child {
+    width: 34%
+}
+.new_solution_article .form-horizontal li.dropdown:last-child .select2-container,
+.edit_solution_article .form-horizontal li.dropdown:last-child .select2-container {
+    width: 100%
+}
+.new_solution_article .form-horizontal li.dropdown .select2-container,
+.edit_solution_article .form-horizontal li.dropdown .select2-container {
+    width: 90%
+}
+.redactor_box,
+.redactor_box textarea {
+    background: #f9f9f9
+}
+.itil-user-name,
+.author-mail-detail,
+.itil-user-email {
+    color: #aaa;
+    font-weight: 300;
+    font-size: 14px
+}
+.itil-user-name a,
+.author-mail-detail a,
+.itil-user-email a {
+    color: #09c;
+    text-decoration: none;
+    font-weight: 400
+}
+.itil-add-link,
+.ci-add-link {
+    color: #aaa;
+    font-size: 15px;
+    padding: 0 0 20px!important;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif
+}
+.itil-add-link:hover,
+.ci-add-link:hover {
+    color: #666
+}
+.itil-add-link .add_option,
+.ci-add-link .add_option {
+    display: inline-block;
+    white-space: nowrap
+}
+.itil-add-link .add_option:after,
+.ci-add-link .add_option:after {
+    content: " / "
+}
+.itil-add-link .add_option:last-child:after,
+.ci-add-link .add_option:last-child:after {
+    content: ""
+}
+.itil-add-link:before,
+.ci-add-link:before {
+    position: relative;
+    top: 1px;
+    margin-right: 1px;
+    font-family: freshicons
+}
+.itil-add-link a,
+.ci-add-link a {
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    color: #aaa;
+    text-decoration: none
+}
+.itil-add-link a:hover,
+.ci-add-link a:hover {
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    color: #666;
+    text-decoration: none
+}
+#itil_add_analysis.itil-add-link .add_option:after {
+    content: ""
+}
+.itil-sub-title {
+    font-weight: 700;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5em
+}
+h3.itil-sub-title {
+    margin-bottom: 3px
+}
+.itil-activity-log {
+    width: 93%;
+    margin-bottom: 20px
+}
+.acitivity-log-header {
+    background: #edebeb;
+    font-weight: 700;
+    border-bottom: 1px solid #FFF;
+    padding: 10px 5px
+}
+.itil-activity-logs {
+    background: #f6f5f5;
+    border-bottom: 1px solid #FFF;
+    padding: 7px 10px;
+    color: #999
+}
+.itil-activity-logs b {
+    font-weight: 300;
+    color: #666
+}
+.itil-pending,
+.itil-approved,
+.itil-rejected,
+.itil-requested,
+.itil-cancelled {
+    border-radius: 3px;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 1px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 50px;
+    line-height: 18px;
+    margin-right: -4px
+}
+.itil-pending {
+    background: #CCC;
+    width: 50px
+}
+.itil-approved {
+    background: #97be5a;
+    width: 60px
+}
+.itil-requested {
+    background: #1292a6;
+    width: 65px
+}
+.itil-cancelled {
+    background: #8c3824;
+    width: 65px
+}
+.commentbox p {
+    width: auto;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif
+}
+.itil-department-list li .item_actions a i {
+    line-height: 16px
+}
+.itil-department-list li,
+.admin_list li {
+    border-bottom: 1px solid #e4e4e4;
+    padding: 15px 10px;
+    background: 0;
+    font-weight: 300
+}
+.itil-department-list li div.item_actions,
+.admin_list li div.item_actions {
+    float: right;
+    padding: 2px 0;
+    position: relative;
+    top: -4px;
+    visibility: hidden
+}
+.itil-department-list li:hover div.item_actions {
+    visibility: visible
+}
+.itil-department-list li a,
+.admin_list li a.item_info,
+.content_list li a.item_info,
+.table-list li a.item_info {
+    color: #444;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px
+}
+.itil-department-list .department-user {
+    color: #999;
+    font-weight: 300
+}
+.itil-department-list .department-desc {
+    color: #444;
+    font-size: 13px;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: clip ellipsis;
+    white-space: nowrap;
+    width: 70%
+}
+.department-header {
+    background: none repeat scroll 0 0 #f8f8f8;
+    border-bottom: 1px solid #e4e4e4;
+    margin-top: 10px;
+    padding: 5px 10px
+}
+.department-header .title {
+    color: #999;
+    float: left;
+    font-size: 14px;
+    font-weight: 300
+}
+.department-header .pagination {
+    background: transparent;
+    border: 0
+}
+.sidepanel p {
+    font-weight: 300;
+    font-size: 13px;
+    color: #666
+}
+.itil-department-new {
+    float: right;
+    position: relative;
+    top: 5px
+}
+.itil-department-list li div.item_actions a {
+    font-size: 13px
+}
+.itil-department-list li div.item_actions a:before {
+    font-size: 16px;
+    color: #999
+}
+.itil-department-list li div.item_actions a:hover:before {
+    color: #666
+}
+#new_itil_department .button-container,
+.edit_itil_department .button-container {
+    margin-right: 50px
+}
+#new_itil_department .ui-form,
+.edit_itil_department .ui-form {
+    background: 0;
+    border: 0
+}
+#new_itil_department .ui-form li,
+.edit_itil_department .ui-form li {
+    width: 90%
+}
+#new_itil_department .ui-form li:first-child,
+.edit_itil_department .ui-form li:first-child {
+    width: 40%
+}
+#new_itil_department .ui-form textarea.smallpara,
+.edit_itil_department .ui-form textarea.smallpara {
+    height: 150px
+}
+#new_itil_department .ui-form .select2-input,
+.edit_itil_department .ui-form .select2-input {
+    background: #fbfbfb!important
+}
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    background: #FFF
+}
+#new_itil_department .ui-form label,
+.edit_itil_department .ui-form label {
+    font-weight: 400
+}
+input.text,
+input[type="text"],
+textarea {
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 #bbb inset;
+    font-weight: 300;
+    padding: 5px;
+    font-size: 14px
+}
+.content .controls .control-left h2 {
+    margin: 0!important
+}
+.content .controls .control-left h2:hover {
+    background: none!important
+}
+#s2id_user_department_users_attributes_department_id {
+    display: inline-block
+}
+.admin_list li:hover,
+.content_list li:hover,
+.table-list li:hover {
+    background: 0
+}
+.itil-detail-note .avatar-wrap {
+    left: -86px;
+    top: -7px
+}
+.itil-detail-note .conversation_thread {
+    margin-top: 0
+}
+.itil-detail-note {
+    background: rgba(235, 250, 255, 0.4);
+    border: 1px solid #DDD;
+    margin-left: 35px;
+    width: 90%;
+    position: relative;
+    margin-bottom: 25px;
+    border-radius: 5px
+}
+.itil-detail-note .itil_tabs_content {
+    border: 0
+}
+.itil-detail-note:after,
+.itil-detail-note:before {
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none
+}
+.itil-detail-note:after {
+    border-color: rgba(234, 250, 255, 0);
+    border-right-color: #f6fcff;
+    border-width: 9px;
+    top: 44px;
+    margin-top: -30px
+}
+.itil-detail-note:before {
+    border-color: rgba(198, 231, 241, 0);
+    border-right-color: #DDD;
+    border-width: 10px;
+    top: 44px;
+    margin-top: -31px
+}
+#itil-notes #notes_container .commentbox {
+    margin: 0
+}
+.itil-description-content {
+    width: 100%
+}
+.itil-user-thumb .avatar-wrap,
+.itil-user-thumb .avatar-wrap .preview_pic img {
+    border-radius: 50%;
+    height: 20px;
+    top: 0;
+    width: 20px;
+    border: 0
+}
+.ui-form {
+    background: 0;
+    border: 0;
+    margin-bottom: 10px
+}
+.ui-form h3 {
+    font-family: roboto;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 2px;
+    color: #333;
+    padding: 2px 5px
+}
+.ui-form label {
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 2px;
+    color: #aaa;
+    padding-bottom: 5px
+}
+.ui-form li {
+    padding: 0 0 10px;
+    width: 100%
+}
+.ui-form .redactor_toolbar li {
+    width: auto
+}
+#cab_sent .itil-user-thumb {
+    position: relative;
+    left: 40px
+}
+#cab_sent .itil-description {
+    margin-left: 24px;
+    width: 93%
+}
+#tkt-inner {
+    margin: 0
+}
+#expand_notes {
+    color: #AAA;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 12px;
+    cursor: pointer
+}
+#expand_notes:hover {
+    color: #666;
+    text-decoration: underline
+}
+.planning_container {
+    margin-bottom: 15px
+}
+.content-status {
+    color: #555;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400
+}
+.content-status:before {
+    font-family: 'freshicons';
+    margin-right: 5px;
+    color: #555
+}
+.associated_module li {
+    margin-top: 0;
+    font-size: 14px
+}
+.associated_module li .itil-detach {
+    visibility: hidden;
+    float: left;
+    color: #aaa
+}
+.associated_module li .itil-detach a {
+    font-size: 14px;
+    color: #aaa
+}
+.associated_module li .itil-detach a:hover {
+    color: #666
+}
+.associated_module li .itil-detach a:before {
+    position: relative;
+    top: 0
+}
+.associated_module li a {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 95%
+}
+.associated_module li:hover .itil-detach {
+    visibility: visible
+}
+.associated_module li:first-child {
+    margin-top: 5px
+}
+.add-planning-form a {
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    background: none!important
+}
+.cab-cancel,
+.solution-cancel {
+    font-size: 15px;
+    color: #aaa;
+    position: relative;
+    top: 6px;
+    float: right
+}
+.cab-cancel:before,
+.solution-cancel:before {
+    color: #aaa
+}
+.cab-cancel:hover,
+.solution-cancel:hover {
+    color: #666
+}
+#spinner {
+    float: left;
+    margin: 14px 0 0 20px;
+    display: none
+}
+.item-summery {
+    display: block;
+    margin: 0 10px;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif
+}
+.item-summery.change-summery {
+    margin-top: -10px
+}
+.item-summery .plan-finish {
+    display: block;
+    margin: -5px 0 0 26px
+}
+.item-summery span {
+    color: #444;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    margin: 5px;
+    height: auto;
+    cursor: default;
+    word-break: break-all
+}
+.item-summery span.item_type {
+    line-height: 12px;
+    position: relative;
+    top: 6px
+}
+.item-summery span.icon-question .toggle-button {
+    margin-left: 0;
+    margin-top: -5px
+}
+.item-summery span:before {
+    font-size: 16px;
+    font-family: freshicons;
+    margin-right: 5px;
+    cursor: default;
+    position: relative;
+    top: 2px
+}
+.item-summery span .plan-start {
+    margin-left: -4px
+}
+.item-summery span.Urgent:before,
+.item-summery span.urgent:before {
+    color: #ff400f;
+    font-size: 14px
+}
+.item-summery span.Low:before,
+.item-summery span.low:before {
+    color: #bee6ef;
+    font-size: 14px
+}
+.item-summery span.Medium:before,
+.item-summery span.medium:before {
+    color: #00c5ff;
+    font-size: 14px
+}
+.item-summery span.High:before,
+.item-summery span.high:before {
+    color: #eaab00;
+    font-size: 14px
+}
+.item-summery label {
+    color: #444;
+    display: inline-block;
+    font-size: 14px
+}
+#TicketProperties,
+#TimesheetTab {
+    border-top: 1px solid #d9d9d9;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-left: 15px;
+    width: 95%
+}
+#TicketProperties h3,
+#TimesheetTab h3 {
+    color: #666
+}
+#TicketProperties h3:before,
+#TimesheetTab h3:before {
+    border-top: 6px solid #666
+}
+#TicketProperties.inactive h3,
+#TimesheetTab.inactive h3 {
+    color: #999
+}
+#TicketProperties.inactive h3:before,
+#TimesheetTab.inactive h3:before {
+    border-left: 6px solid #999;
+    border-top: 6px solid transparent
+}
+.review-notes a {
+    font-size: 15px
+}
+.review-notes a:before {
+    color: #aaa
+}
+.review-notes a:hover:before {
+    color: #999
+}
+#itil-review-description {
+    width: 98%
+}
+#itil-review-description a {
+    font-size: 14px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 65%
+}
+#itil-review-description .review-notes {
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+#itil-review-description .review-notes .itil-sub-title {
+    margin-top: 15px 0 5px
+}
+.release-info {
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    padding: 10px
+}
+.release-info .release-subject {
+    margin-bottom: 5px;
+    display: block;
+    float: left
+}
+.release-info .release-status {
+    color: #999;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 10px
+}
+.release-info .release-status:before {
+    position: relative;
+    top: 2px;
+    font-family: freshicons;
+    margin-right: 3px
+}
+.release-info .release-status.Urgent:before {
+    color: #de0000
+}
+.select2-container .select2-choice {
+    background: none repeat scroll 0 0 #fff;
+    border-bottom: 1px solid #ddd;
+    border-image: none;
+    border-left: 1px solid #999;
+    border-radius: 3px 3px 3px 3px;
+    border-right: 1px solid #999;
+    box-shadow: 0 4px 6px -4px #ccc inset, 0 2px 4px -3px #aaa inset;
+    font-size: 13px
+}
+.select2-dropdown-open a.select2-choice {
+    background: #FFF;
+    border: 1px solid #AAA
+}
+.select2-container.select2-drop-above .select2-choice {
+    background: #FFF;
+    border-top: 0
+}
+.label-edit-form {
+    display: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700
+}
+.top_panel_summary {
+    float: right;
+    padding-top: 15px;
+    text-align: right
+}
+.top_panel_summary .item-summery {
+    float: left
+}
+.top_panel_summary span {
+    float: left
+}
+.toggle-container {
+    margin: 0!important;
+    color: #FFF
+}
+.toggle-container span {
+    margin: 0
+}
+.bread-crumb-wrap {
+    width: 70%!important;
+    float: left
+}
+.spertatorBar {
+    border-top: 1px solid #CCC;
+    margin: 0 -20px 0 -45px;
+    box-shadow: inset 3px 3px 0 2px #f4f4f4;
+    height: 3px
+}
+.datepair {
+    width: 73px!important;
+    font-size: 13px!important;
+    color: #444!important;
+    font-size: 12px!important;
+    font-weight: 400!important;
+    padding: 6px 0 4px 8px!important;
+    border: none!important;
+    border-radius: 0!important;
+    box-shadow: none!important;
+    background: transparent!important
+}
+.datepair:focus {
+    background: transparent!important
+}
+.ui-timepicker-input {
+    margin-left: 0!important;
+    width: 50px!important;
+    border-left: 1px dotted #CCC!important;
+    padding: 6px 0 4px 4px!important
+}
+.date_time_box {
+    box-shadow: 0 4px 6px -4px #ccc inset, 0 2px 4px -3px #aaa inset;
+    border: 1px solid #999;
+    border-bottom: 1px solid #DDD;
+    border-radius: 3px;
+    height: 26px;
+    width: 140px;
+    background: #FFF
+}
+#TicketProperties .ui-form ul li.small {
+    width: 50%;
+    clear: none
+}
+li.button-container .btn {
+    margin-right: 10px;
+    margin-top: 5px
+}
+.itil-commentbox h2.subject {
+    color: #555;
+    font-size: 22px;
+    font-weight: 700
+}
+#ticket_original_request {
+    margin-top: 5px;
+    color: #444;
+    overflow-x: auto;
+    word-wrap: break-word
+}
+#ticket_original_request table {
+    word-break: normal
+}
+.span3 .select2-choice {
+    width: 90px
+}
+#problem_known_error {
+    margin-bottom: 7px
+}
+#note_form_container,
+.edit_note_form_container {
+    background: #f9f9f9;
+    border-top: 1px solid #DDD!important;
+    margin: 0 -20px;
+    padding: 10px 20px
+}
+#itil-analysis-form {
+    clear: both
+}
+ul#custom_fields {
+    padding: 15px 20px;
+    width: 84%;
+    border-top: 1px solid #d3d3d3
+}
+ul#custom_fields li a {
+    margin: 10px 10px 0 0;
+    font-size: 0;
+    background-color: #FFF
+}
+.admin_form #custom_ticket_form li,
+.admin_form #custom_problem_form li,
+.admin_form #custom_change_form li,
+.admin_form #custom_release_form li,
+.admin_form #custom_item_field_form li {
+    border-bottom: 0;
+    margin-bottom: 15px;
+    border: 1px solid #FFF
+}
+.admin_form #custom_ticket_form li.checkbox,
+.admin_form #custom_problem_form li.checkbox,
+.admin_form #custom_change_form li.checkbox,
+.admin_form #custom_release_form li.checkbox,
+.admin_form #custom_item_field_form li.checkbox {
+    padding-left: 0
+}
+.admin_form #custom_ticket_form li.ui-sortable-placeholder,
+.admin_form #custom_problem_form li.ui-sortable-placeholder,
+.admin_form #custom_change_form li.ui-sortable-placeholder,
+.admin_form #custom_release_form li.ui-sortable-placeholder,
+.admin_form #custom_item_field_form li.ui-sortable-placeholder {
+    background: #eafaff!important;
+    border: 1px solid #c6e7f1
+}
+.admin_form #custom_ticket_form li:hover,
+.admin_form #custom_problem_form li:hover,
+.admin_form #custom_change_form li:hover,
+.admin_form #custom_release_form li:hover,
+.admin_form #custom_item_field_form li:hover {
+    margin: -10px 0 15px -10px;
+    padding: 10px 0 10px 10px;
+    background: #eafaff;
+    border: 1px solid #c6e7f1
+}
+.admin_form #custom_ticket_form li.html_paragraph textarea,
+.admin_form #custom_problem_form li.html_paragraph textarea,
+.admin_form #custom_change_form li.html_paragraph textarea,
+.admin_form #custom_release_form li.html_paragraph textarea,
+.admin_form #custom_item_field_form li.html_paragraph textarea {
+    width: 97%
+}
+.button_drag {
+    width: 72px;
+    height: 59px;
+    border: 1px solid #999;
+    box-shadow: 0 0 5px #dfdfdf;
+    border-radius: 5px;
+    display: inline-block;
+    background-repeat: no-repeat
+}
+ul.tabs {
+    margin-left: 0;
+    margin-right: 0
+}
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: 0;
+    margin-top: -18px
+}
+#problem_fields .admin_form,
+#change_fields .admin_form,
+#release_fields .admin_form,
+#ticket_fields .admin_form {
+    background: #FFF;
+    margin: 0
+}
+#problem_fields #button_panel,
+#change_fields #button_panel,
+#release_fields #button_panel,
+#ticket_fields #button_panel {
+    margin-right: 0;
+    padding: 10px
+}
+#ticket_fields .ticket_type {
+    position: relative
+}
+#ticket_fields #typeCheck {
+    position: absolute;
+    right: 7px;
+    top: 0;
+    color: #999;
+    font-size: 12px;
+    cursor: pointer
+}
+#ticket_fields #typeCheck i {
+    margin: 2px 0 0 8px
+}
+.guided-tour-start {
+    background-color: #f9f9f9
+}
+.tab-content #custom_css,
+.tab-content #preferences,
+.tab-content #layout {
+    padding: 10px
+}
+.tab-content #layout .tab-content {
+    border: 0
+}
+.toggle-button .toggle-handle span {
+    top: -2px
+}
+.problem-details .toggle-button .toggle-handle span,
+.ticket_details .toggle-button .toggle-handle span,
+#sla_policies_list .toggle-button .toggle-handle span {
+    top: 0
+}
+div.escalate_to .resolution_container {
+    width: 100%;
+    padding: 0
+}
+#myTabContent {
+    margin-top: 0;
+    border: 0
+}
+#itil_product_form .description-form {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    background: #f9f9f9
+}
+#itil_product_form .description-form .redactor_box {
+    border: 0;
+    border-radius: 5px;
+    padding: 0 10px 10px
+}
+#itil_product_form .description-form .redactor_box .redactor_toolbar {
+    background: 0;
+    border-bottom: 0
+}
+#itil_product_form .description-form .redactor_editor {
+    background: #FFF!important;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #888 inset!important;
+    min-height: 50px
+}
+#itil_product_form .description-form .redactor_editor:focus {
+    background: #FFF!important
+}
+#itil_product_form .description-form .planning_buttons {
+    margin-right: 1%
+}
+.margin10 {
+    margin-top: 10px
+}
+.row-fluid .span13 {
+    width: 45%!important
+}
+.light-color {
+    color: #999
+}
+.icon-pencil-3,
+.icon-trash,
+.icon-edit,
+.icon-minus,
+.icon-pencil {
+    color: #999;
+    font-size: 15px
+}
+.icon-pencil-3:hover,
+.icon-trash:hover,
+.icon-edit:hover,
+.icon-minus:hover,
+.icon-pencil:hover {
+    color: #333
+}
+.icon-pencil-3:before,
+.icon-trash:before,
+.icon-edit:before,
+.icon-minus:before,
+.icon-pencil:before {
+    margin-right: 5px
+}
+#new_itil_vendor,
+#new_itil_product,
+.edit_itil_vendor,
+.new_itil_product_form,
+.ui-form,
+#new_user,
+.edit_user,
+.new_admin_canned_responses_response,
+.edit_admin_canned_responses_response {
+    padding: 0
+}
+#new_itil_vendor .form_wrapper,
+#new_itil_product .form_wrapper,
+.edit_itil_vendor .form_wrapper,
+.new_itil_product_form .form_wrapper,
+.ui-form .form_wrapper,
+#new_user .form_wrapper,
+.edit_user .form_wrapper,
+.new_admin_canned_responses_response .form_wrapper,
+.edit_admin_canned_responses_response .form_wrapper {
+    width: 90%;
+    margin-left: 4.3%
+}
+#new_itil_vendor .row-fluid,
+#new_itil_product .row-fluid,
+.edit_itil_vendor .row-fluid,
+.new_itil_product_form .row-fluid,
+.ui-form .row-fluid,
+#new_user .row-fluid,
+.edit_user .row-fluid,
+.new_admin_canned_responses_response .row-fluid,
+.edit_admin_canned_responses_response .row-fluid {
+    padding-bottom: 0;
+    padding-top: 10px
+}
+#new_itil_vendor .row-fluid.description-form,
+#new_itil_product .row-fluid.description-form,
+.edit_itil_vendor .row-fluid.description-form,
+.new_itil_product_form .row-fluid.description-form,
+.ui-form .row-fluid.description-form,
+#new_user .row-fluid.description-form,
+.edit_user .row-fluid.description-form,
+.new_admin_canned_responses_response .row-fluid.description-form,
+.edit_admin_canned_responses_response .row-fluid.description-form {
+    padding-top: 0
+}
+#new_itil_vendor .row-fluid h3,
+#new_itil_product .row-fluid h3,
+.edit_itil_vendor .row-fluid h3,
+.new_itil_product_form .row-fluid h3,
+.ui-form .row-fluid h3,
+#new_user .row-fluid h3,
+.edit_user .row-fluid h3,
+.new_admin_canned_responses_response .row-fluid h3,
+.edit_admin_canned_responses_response .row-fluid h3 {
+    font-size: 22px;
+    padding-bottom: 5px
+}
+#new_itil_vendor .row-fluid label,
+#new_itil_product .row-fluid label,
+.edit_itil_vendor .row-fluid label,
+.new_itil_product_form .row-fluid label,
+.ui-form .row-fluid label,
+#new_user .row-fluid label,
+.edit_user .row-fluid label,
+.new_admin_canned_responses_response .row-fluid label,
+.edit_admin_canned_responses_response .row-fluid label {
+    color: #999;
+    font-weight: 400;
+    font-size: 13px;
+    padding-bottom: 3px;
+    margin-bottom: 0;
+    display: inline-block
+}
+#new_itil_vendor .row-fluid label.error,
+#new_itil_product .row-fluid label.error,
+.edit_itil_vendor .row-fluid label.error,
+.new_itil_product_form .row-fluid label.error,
+.ui-form .row-fluid label.error,
+#new_user .row-fluid label.error,
+.edit_user .row-fluid label.error,
+.new_admin_canned_responses_response .row-fluid label.error,
+.edit_admin_canned_responses_response .row-fluid label.error {
+    color: #a90329;
+    margin: -7px 0 0 0;
+    display: block
+}
+#new_itil_vendor .row-fluid select+.error,
+#new_itil_product .row-fluid select+.error,
+.edit_itil_vendor .row-fluid select+.error,
+.new_itil_product_form .row-fluid select+.error,
+.ui-form .row-fluid select+.error,
+#new_user .row-fluid select+.error,
+.edit_user .row-fluid select+.error,
+.new_admin_canned_responses_response .row-fluid select+.error,
+.edit_admin_canned_responses_response .row-fluid select+.error {
+    margin: 2px 0
+}
+#new_itil_vendor .row-fluid .span6,
+#new_itil_product .row-fluid .span6,
+.edit_itil_vendor .row-fluid .span6,
+.new_itil_product_form .row-fluid .span6,
+.ui-form .row-fluid .span6,
+#new_user .row-fluid .span6,
+.edit_user .row-fluid .span6,
+.new_admin_canned_responses_response .row-fluid .span6,
+.edit_admin_canned_responses_response .row-fluid .span6 {
+    width: 48%
+}
+#new_itil_vendor .row-fluid .span6 .span12,
+#new_itil_product .row-fluid .span6 .span12,
+.edit_itil_vendor .row-fluid .span6 .span12,
+.new_itil_product_form .row-fluid .span6 .span12,
+.ui-form .row-fluid .span6 .span12,
+#new_user .row-fluid .span6 .span12,
+.edit_user .row-fluid .span6 .span12,
+.new_admin_canned_responses_response .row-fluid .span6 .span12,
+.edit_admin_canned_responses_response .row-fluid .span6 .span12 {
+    margin-left: 0
+}
+#new_itil_vendor .row-fluid .span3,
+#new_itil_product .row-fluid .span3,
+.edit_itil_vendor .row-fluid .span3,
+.new_itil_product_form .row-fluid .span3,
+.ui-form .row-fluid .span3,
+#new_user .row-fluid .span3,
+.edit_user .row-fluid .span3,
+.new_admin_canned_responses_response .row-fluid .span3,
+.edit_admin_canned_responses_response .row-fluid .span3 {
+    width: 22%
+}
+#new_itil_vendor .row-fluid>[class*="span"],
+#new_itil_product .row-fluid>[class*="span"],
+.edit_itil_vendor .row-fluid>[class*="span"],
+.new_itil_product_form .row-fluid>[class*="span"],
+.ui-form .row-fluid>[class*="span"],
+#new_user .row-fluid>[class*="span"],
+.edit_user .row-fluid>[class*="span"],
+.new_admin_canned_responses_response .row-fluid>[class*="span"],
+.edit_admin_canned_responses_response .row-fluid>[class*="span"] {
+    float: left;
+    margin-left: 4%
+}
+#new_itil_vendor .row-fluid>[class*="span"]:first-child,
+#new_itil_product .row-fluid>[class*="span"]:first-child,
+.edit_itil_vendor .row-fluid>[class*="span"]:first-child,
+.new_itil_product_form .row-fluid>[class*="span"]:first-child,
+.ui-form .row-fluid>[class*="span"]:first-child,
+#new_user .row-fluid>[class*="span"]:first-child,
+.edit_user .row-fluid>[class*="span"]:first-child,
+.new_admin_canned_responses_response .row-fluid>[class*="span"]:first-child,
+.edit_admin_canned_responses_response .row-fluid>[class*="span"]:first-child {
+    margin-left: 0
+}
+#new_itil_vendor .number {
+    width: 99%
+}
+.itil_product_properties {
+    margin: 10px 0;
+    border: 1px solid #ededed;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box
+}
+.itil_product_properties tr:nth-child(odd) {
+    border-top: 1px solid #ededed;
+    background: #fafafa
+}
+.itil_product_properties tr:nth-child(even) {
+    border-top: 1px solid #f4a4a4;
+    background: #FFF
+}
+.itil_product_properties tr td {
+    padding: 1% .5%
+}
+.itil_product_properties tr td:nth-child(1) {
+    width: 20%
+}
+.itil_product_properties tr td:nth-child(2) {
+    width: 34%
+}
+.itil_product_properties tr td:nth-child(3) {
+    width: 20%
+}
+.itil_product_properties tr td:nth-child(4) {
+    width: 34%
+}
+.itil_products_list .itil-content-title,
+.itil_products_list .product_title,
+.itil_vendors_list .itil-content-title,
+.itil_vendors_list .product_title {
+    color: #CCC;
+    font-weight: 300;
+    margin-top: 15px
+}
+.itil_products_list #saved_product_types,
+.itil_vendors_list #saved_product_types {
+    margin-bottom: 10px;
+    width: 100%
+}
+.itil_vendor_description {
+    color: #666
+}
+.ticket_details #tkt-inner .leftcontent {
+    border-left: 4px solid #f9f9f9
+}
+.ticket_details #tkt-inner .requester-details .icon-location {
+    font-size: 15px;
+    color: #505050
+}
+.ticket_details .pagearea {
+    border-top: 0
+}
+.bread-crumb-issue-id {
+    color: #CCC;
+    font-size: 16px;
+    font-weight: 700;
+    left: 85px;
+    position: relative;
+    top: 22px
+}
+#firstchild.stuck {
+    background: none repeat scroll 0 0 #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 85.25%;
+    z-index: 10000
+}
+#firstchild .controls {
+    display: block;
+    width: 100%
+}
+.new_itil_problem,
+.new_itil_change,
+.new_itil_release,
+.edit_itil_problem,
+.edit_itil_change,
+.edit_itil_release,
+.new_helpdesk_ticket,
+.edit_helpdesk_ticket,
+.resolution_types,
+#new_user,
+.billing-form,
+.new_admin_canned_responses_response,
+.edit_admin_canned_responses_response,
+.new_topic,
+.edit_topic {
+    width: 100%
+}
+.new_itil_problem .product_header,
+.new_itil_change .product_header,
+.new_itil_release .product_header,
+.edit_itil_problem .product_header,
+.edit_itil_change .product_header,
+.edit_itil_release .product_header,
+.new_helpdesk_ticket .product_header,
+.edit_helpdesk_ticket .product_header,
+.resolution_types .product_header,
+#new_user .product_header,
+.billing-form .product_header,
+.new_admin_canned_responses_response .product_header,
+.edit_admin_canned_responses_response .product_header,
+.new_topic .product_header,
+.edit_topic .product_header {
+    border-bottom: 1px solid #CCC;
+    box-shadow: 0 4px 0 0 #f4f4f4
+}
+.new_itil_problem .product_header .header-opt-menu a:after,
+.new_itil_change .product_header .header-opt-menu a:after,
+.new_itil_release .product_header .header-opt-menu a:after,
+.edit_itil_problem .product_header .header-opt-menu a:after,
+.edit_itil_change .product_header .header-opt-menu a:after,
+.edit_itil_release .product_header .header-opt-menu a:after,
+.new_helpdesk_ticket .product_header .header-opt-menu a:after,
+.edit_helpdesk_ticket .product_header .header-opt-menu a:after,
+.resolution_types .product_header .header-opt-menu a:after,
+#new_user .product_header .header-opt-menu a:after,
+.billing-form .product_header .header-opt-menu a:after,
+.new_admin_canned_responses_response .product_header .header-opt-menu a:after,
+.edit_admin_canned_responses_response .product_header .header-opt-menu a:after,
+.new_topic .product_header .header-opt-menu a:after,
+.edit_topic .product_header .header-opt-menu a:after {
+    border: 0
+}
+.new_itil_problem h3.title,
+.new_itil_change h3.title,
+.new_itil_release h3.title,
+.edit_itil_problem h3.title,
+.edit_itil_change h3.title,
+.edit_itil_release h3.title,
+.new_helpdesk_ticket h3.title,
+.edit_helpdesk_ticket h3.title,
+.resolution_types h3.title,
+#new_user h3.title,
+.billing-form h3.title,
+.new_admin_canned_responses_response h3.title,
+.edit_admin_canned_responses_response h3.title,
+.new_topic h3.title,
+.edit_topic h3.title {
+    color: #555;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 5px 0
+}
+.new_itil_problem .ui-form,
+.new_itil_change .ui-form,
+.new_itil_release .ui-form,
+.edit_itil_problem .ui-form,
+.edit_itil_change .ui-form,
+.edit_itil_release .ui-form,
+.new_helpdesk_ticket .ui-form,
+.edit_helpdesk_ticket .ui-form,
+.resolution_types .ui-form,
+#new_user .ui-form,
+.billing-form .ui-form,
+.new_admin_canned_responses_response .ui-form,
+.edit_admin_canned_responses_response .ui-form,
+.new_topic .ui-form,
+.edit_topic .ui-form {
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 4%;
+    padding-bottom: 5%
+}
+.new_itil_problem .ui-form h3,
+.new_itil_change .ui-form h3,
+.new_itil_release .ui-form h3,
+.edit_itil_problem .ui-form h3,
+.edit_itil_change .ui-form h3,
+.edit_itil_release .ui-form h3,
+.new_helpdesk_ticket .ui-form h3,
+.edit_helpdesk_ticket .ui-form h3,
+.resolution_types .ui-form h3,
+#new_user .ui-form h3,
+.billing-form .ui-form h3,
+.new_admin_canned_responses_response .ui-form h3,
+.edit_admin_canned_responses_response .ui-form h3,
+.new_topic .ui-form h3,
+.edit_topic .ui-form h3 {
+    margin: 10px 0;
+    font-size: 22px
+}
+.new_itil_problem .ui-form li,
+.new_itil_change .ui-form li,
+.new_itil_release .ui-form li,
+.edit_itil_problem .ui-form li,
+.edit_itil_change .ui-form li,
+.edit_itil_release .ui-form li,
+.new_helpdesk_ticket .ui-form li,
+.edit_helpdesk_ticket .ui-form li,
+.resolution_types .ui-form li,
+#new_user .ui-form li,
+.billing-form .ui-form li,
+.new_admin_canned_responses_response .ui-form li,
+.edit_admin_canned_responses_response .ui-form li,
+.new_topic .ui-form li,
+.edit_topic .ui-form li {
+    padding-bottom: 15px
+}
+.new_itil_problem .ui-form li .attach_wrapper,
+.new_itil_change .ui-form li .attach_wrapper,
+.new_itil_release .ui-form li .attach_wrapper,
+.edit_itil_problem .ui-form li .attach_wrapper,
+.edit_itil_change .ui-form li .attach_wrapper,
+.edit_itil_release .ui-form li .attach_wrapper,
+.new_helpdesk_ticket .ui-form li .attach_wrapper,
+.edit_helpdesk_ticket .ui-form li .attach_wrapper,
+.resolution_types .ui-form li .attach_wrapper,
+#new_user .ui-form li .attach_wrapper,
+.billing-form .ui-form li .attach_wrapper,
+.new_admin_canned_responses_response .ui-form li .attach_wrapper,
+.edit_admin_canned_responses_response .ui-form li .attach_wrapper,
+.new_topic .ui-form li .attach_wrapper,
+.edit_topic .ui-form li .attach_wrapper {
+    margin-top: 15px
+}
+.new_itil_problem .ui-form li.dropdown,
+.new_itil_problem .ui-form li.small,
+.new_itil_problem .ui-form li.dropdown_blank,
+.new_itil_problem .ui-form li.custom_number,
+.new_itil_problem .ui-form li.custom_decimal,
+.new_itil_change .ui-form li.dropdown,
+.new_itil_change .ui-form li.small,
+.new_itil_change .ui-form li.dropdown_blank,
+.new_itil_change .ui-form li.custom_number,
+.new_itil_change .ui-form li.custom_decimal,
+.new_itil_release .ui-form li.dropdown,
+.new_itil_release .ui-form li.small,
+.new_itil_release .ui-form li.dropdown_blank,
+.new_itil_release .ui-form li.custom_number,
+.new_itil_release .ui-form li.custom_decimal,
+.edit_itil_problem .ui-form li.dropdown,
+.edit_itil_problem .ui-form li.small,
+.edit_itil_problem .ui-form li.dropdown_blank,
+.edit_itil_problem .ui-form li.custom_number,
+.edit_itil_problem .ui-form li.custom_decimal,
+.edit_itil_change .ui-form li.dropdown,
+.edit_itil_change .ui-form li.small,
+.edit_itil_change .ui-form li.dropdown_blank,
+.edit_itil_change .ui-form li.custom_number,
+.edit_itil_change .ui-form li.custom_decimal,
+.edit_itil_release .ui-form li.dropdown,
+.edit_itil_release .ui-form li.small,
+.edit_itil_release .ui-form li.dropdown_blank,
+.edit_itil_release .ui-form li.custom_number,
+.edit_itil_release .ui-form li.custom_decimal,
+.new_helpdesk_ticket .ui-form li.dropdown,
+.new_helpdesk_ticket .ui-form li.small,
+.new_helpdesk_ticket .ui-form li.dropdown_blank,
+.new_helpdesk_ticket .ui-form li.custom_number,
+.new_helpdesk_ticket .ui-form li.custom_decimal,
+.edit_helpdesk_ticket .ui-form li.dropdown,
+.edit_helpdesk_ticket .ui-form li.small,
+.edit_helpdesk_ticket .ui-form li.dropdown_blank,
+.edit_helpdesk_ticket .ui-form li.custom_number,
+.edit_helpdesk_ticket .ui-form li.custom_decimal,
+.resolution_types .ui-form li.dropdown,
+.resolution_types .ui-form li.small,
+.resolution_types .ui-form li.dropdown_blank,
+.resolution_types .ui-form li.custom_number,
+.resolution_types .ui-form li.custom_decimal,
+#new_user .ui-form li.dropdown,
+#new_user .ui-form li.small,
+#new_user .ui-form li.dropdown_blank,
+#new_user .ui-form li.custom_number,
+#new_user .ui-form li.custom_decimal,
+.billing-form .ui-form li.dropdown,
+.billing-form .ui-form li.small,
+.billing-form .ui-form li.dropdown_blank,
+.billing-form .ui-form li.custom_number,
+.billing-form .ui-form li.custom_decimal,
+.new_admin_canned_responses_response .ui-form li.dropdown,
+.new_admin_canned_responses_response .ui-form li.small,
+.new_admin_canned_responses_response .ui-form li.dropdown_blank,
+.new_admin_canned_responses_response .ui-form li.custom_number,
+.new_admin_canned_responses_response .ui-form li.custom_decimal,
+.edit_admin_canned_responses_response .ui-form li.dropdown,
+.edit_admin_canned_responses_response .ui-form li.small,
+.edit_admin_canned_responses_response .ui-form li.dropdown_blank,
+.edit_admin_canned_responses_response .ui-form li.custom_number,
+.edit_admin_canned_responses_response .ui-form li.custom_decimal,
+.new_topic .ui-form li.dropdown,
+.new_topic .ui-form li.small,
+.new_topic .ui-form li.dropdown_blank,
+.new_topic .ui-form li.custom_number,
+.new_topic .ui-form li.custom_decimal,
+.edit_topic .ui-form li.dropdown,
+.edit_topic .ui-form li.small,
+.edit_topic .ui-form li.dropdown_blank,
+.edit_topic .ui-form li.custom_number,
+.edit_topic .ui-form li.custom_decimal {
+    width: 50%
+}
+.new_itil_problem .ui-form li label,
+.new_itil_change .ui-form li label,
+.new_itil_release .ui-form li label,
+.edit_itil_problem .ui-form li label,
+.edit_itil_change .ui-form li label,
+.edit_itil_release .ui-form li label,
+.new_helpdesk_ticket .ui-form li label,
+.edit_helpdesk_ticket .ui-form li label,
+.resolution_types .ui-form li label,
+#new_user .ui-form li label,
+.billing-form .ui-form li label,
+.new_admin_canned_responses_response .ui-form li label,
+.edit_admin_canned_responses_response .ui-form li label,
+.new_topic .ui-form li label,
+.edit_topic .ui-form li label {
+    color: #999;
+    font-size: 13px;
+    font-weight: 400
+}
+.new_itil_problem .ui-form li label.error,
+.new_itil_change .ui-form li label.error,
+.new_itil_release .ui-form li label.error,
+.edit_itil_problem .ui-form li label.error,
+.edit_itil_change .ui-form li label.error,
+.edit_itil_release .ui-form li label.error,
+.new_helpdesk_ticket .ui-form li label.error,
+.edit_helpdesk_ticket .ui-form li label.error,
+.resolution_types .ui-form li label.error,
+#new_user .ui-form li label.error,
+.billing-form .ui-form li label.error,
+.new_admin_canned_responses_response .ui-form li label.error,
+.edit_admin_canned_responses_response .ui-form li label.error,
+.new_topic .ui-form li label.error,
+.edit_topic .ui-form li label.error {
+    color: #a90329
+}
+.new_itil_problem .ui-form li input,
+.new_itil_change .ui-form li input,
+.new_itil_release .ui-form li input,
+.edit_itil_problem .ui-form li input,
+.edit_itil_change .ui-form li input,
+.edit_itil_release .ui-form li input,
+.new_helpdesk_ticket .ui-form li input,
+.edit_helpdesk_ticket .ui-form li input,
+.resolution_types .ui-form li input,
+#new_user .ui-form li input,
+.billing-form .ui-form li input,
+.new_admin_canned_responses_response .ui-form li input,
+.edit_admin_canned_responses_response .ui-form li input,
+.new_topic .ui-form li input,
+.edit_topic .ui-form li input {
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 400
+}
+.new_itil_problem .ui-form li textarea,
+.new_itil_change .ui-form li textarea,
+.new_itil_release .ui-form li textarea,
+.edit_itil_problem .ui-form li textarea,
+.edit_itil_change .ui-form li textarea,
+.edit_itil_release .ui-form li textarea,
+.new_helpdesk_ticket .ui-form li textarea,
+.edit_helpdesk_ticket .ui-form li textarea,
+.resolution_types .ui-form li textarea,
+#new_user .ui-form li textarea,
+.billing-form .ui-form li textarea,
+.new_admin_canned_responses_response .ui-form li textarea,
+.edit_admin_canned_responses_response .ui-form li textarea,
+.new_topic .ui-form li textarea,
+.edit_topic .ui-form li textarea {
+    width: 93%
+}
+.new_itil_problem .ui-form li.custom_checkbox,
+.new_itil_change .ui-form li.custom_checkbox,
+.new_itil_release .ui-form li.custom_checkbox,
+.edit_itil_problem .ui-form li.custom_checkbox,
+.edit_itil_change .ui-form li.custom_checkbox,
+.edit_itil_release .ui-form li.custom_checkbox,
+.new_helpdesk_ticket .ui-form li.custom_checkbox,
+.edit_helpdesk_ticket .ui-form li.custom_checkbox,
+.resolution_types .ui-form li.custom_checkbox,
+#new_user .ui-form li.custom_checkbox,
+.billing-form .ui-form li.custom_checkbox,
+.new_admin_canned_responses_response .ui-form li.custom_checkbox,
+.edit_admin_canned_responses_response .ui-form li.custom_checkbox,
+.new_topic .ui-form li.custom_checkbox,
+.edit_topic .ui-form li.custom_checkbox {
+    padding-left: 0
+}
+.new_itil_problem .ui-form li.custom_checkbox input[type="checkbox"],
+.new_itil_change .ui-form li.custom_checkbox input[type="checkbox"],
+.new_itil_release .ui-form li.custom_checkbox input[type="checkbox"],
+.edit_itil_problem .ui-form li.custom_checkbox input[type="checkbox"],
+.edit_itil_change .ui-form li.custom_checkbox input[type="checkbox"],
+.edit_itil_release .ui-form li.custom_checkbox input[type="checkbox"],
+.new_helpdesk_ticket .ui-form li.custom_checkbox input[type="checkbox"],
+.edit_helpdesk_ticket .ui-form li.custom_checkbox input[type="checkbox"],
+.resolution_types .ui-form li.custom_checkbox input[type="checkbox"],
+#new_user .ui-form li.custom_checkbox input[type="checkbox"],
+.billing-form .ui-form li.custom_checkbox input[type="checkbox"],
+.new_admin_canned_responses_response .ui-form li.custom_checkbox input[type="checkbox"],
+.edit_admin_canned_responses_response .ui-form li.custom_checkbox input[type="checkbox"],
+.new_topic .ui-form li.custom_checkbox input[type="checkbox"],
+.edit_topic .ui-form li.custom_checkbox input[type="checkbox"] {
+    margin-top: 0
+}
+.new_itil_problem .ui-form li.custom_number input,
+.new_itil_problem .ui-form li.custom_decimal input,
+.new_itil_change .ui-form li.custom_number input,
+.new_itil_change .ui-form li.custom_decimal input,
+.new_itil_release .ui-form li.custom_number input,
+.new_itil_release .ui-form li.custom_decimal input,
+.edit_itil_problem .ui-form li.custom_number input,
+.edit_itil_problem .ui-form li.custom_decimal input,
+.edit_itil_change .ui-form li.custom_number input,
+.edit_itil_change .ui-form li.custom_decimal input,
+.edit_itil_release .ui-form li.custom_number input,
+.edit_itil_release .ui-form li.custom_decimal input,
+.new_helpdesk_ticket .ui-form li.custom_number input,
+.new_helpdesk_ticket .ui-form li.custom_decimal input,
+.edit_helpdesk_ticket .ui-form li.custom_number input,
+.edit_helpdesk_ticket .ui-form li.custom_decimal input,
+.resolution_types .ui-form li.custom_number input,
+.resolution_types .ui-form li.custom_decimal input,
+#new_user .ui-form li.custom_number input,
+#new_user .ui-form li.custom_decimal input,
+.billing-form .ui-form li.custom_number input,
+.billing-form .ui-form li.custom_decimal input,
+.new_admin_canned_responses_response .ui-form li.custom_number input,
+.new_admin_canned_responses_response .ui-form li.custom_decimal input,
+.edit_admin_canned_responses_response .ui-form li.custom_number input,
+.edit_admin_canned_responses_response .ui-form li.custom_decimal input,
+.new_topic .ui-form li.custom_number input,
+.new_topic .ui-form li.custom_decimal input,
+.edit_topic .ui-form li.custom_number input,
+.edit_topic .ui-form li.custom_decimal input {
+    width: 88%
+}
+.new_itil_problem .ui-form li.default_subject,
+.new_itil_problem .ui-form li.default_requester,
+.new_itil_problem .ui-form li.custom_text,
+.new_itil_change .ui-form li.default_subject,
+.new_itil_change .ui-form li.default_requester,
+.new_itil_change .ui-form li.custom_text,
+.new_itil_release .ui-form li.default_subject,
+.new_itil_release .ui-form li.default_requester,
+.new_itil_release .ui-form li.custom_text,
+.edit_itil_problem .ui-form li.default_subject,
+.edit_itil_problem .ui-form li.default_requester,
+.edit_itil_problem .ui-form li.custom_text,
+.edit_itil_change .ui-form li.default_subject,
+.edit_itil_change .ui-form li.default_requester,
+.edit_itil_change .ui-form li.custom_text,
+.edit_itil_release .ui-form li.default_subject,
+.edit_itil_release .ui-form li.default_requester,
+.edit_itil_release .ui-form li.custom_text,
+.new_helpdesk_ticket .ui-form li.default_subject,
+.new_helpdesk_ticket .ui-form li.default_requester,
+.new_helpdesk_ticket .ui-form li.custom_text,
+.edit_helpdesk_ticket .ui-form li.default_subject,
+.edit_helpdesk_ticket .ui-form li.default_requester,
+.edit_helpdesk_ticket .ui-form li.custom_text,
+.resolution_types .ui-form li.default_subject,
+.resolution_types .ui-form li.default_requester,
+.resolution_types .ui-form li.custom_text,
+#new_user .ui-form li.default_subject,
+#new_user .ui-form li.default_requester,
+#new_user .ui-form li.custom_text,
+.billing-form .ui-form li.default_subject,
+.billing-form .ui-form li.default_requester,
+.billing-form .ui-form li.custom_text,
+.new_admin_canned_responses_response .ui-form li.default_subject,
+.new_admin_canned_responses_response .ui-form li.default_requester,
+.new_admin_canned_responses_response .ui-form li.custom_text,
+.edit_admin_canned_responses_response .ui-form li.default_subject,
+.edit_admin_canned_responses_response .ui-form li.default_requester,
+.edit_admin_canned_responses_response .ui-form li.custom_text,
+.new_topic .ui-form li.default_subject,
+.new_topic .ui-form li.default_requester,
+.new_topic .ui-form li.custom_text,
+.edit_topic .ui-form li.default_subject,
+.edit_topic .ui-form li.default_requester,
+.edit_topic .ui-form li.custom_text {
+    width: 94%
+}
+.new_itil_problem .ui-form li.default_description,
+.new_itil_change .ui-form li.default_description,
+.new_itil_release .ui-form li.default_description,
+.edit_itil_problem .ui-form li.default_description,
+.edit_itil_change .ui-form li.default_description,
+.edit_itil_release .ui-form li.default_description,
+.new_helpdesk_ticket .ui-form li.default_description,
+.edit_helpdesk_ticket .ui-form li.default_description,
+.resolution_types .ui-form li.default_description,
+#new_user .ui-form li.default_description,
+.billing-form .ui-form li.default_description,
+.new_admin_canned_responses_response .ui-form li.default_description,
+.edit_admin_canned_responses_response .ui-form li.default_description,
+.new_topic .ui-form li.default_description,
+.edit_topic .ui-form li.default_description {
+    width: 95%
+}
+.new_itil_problem .ui-form li.html_paragraph .redactor_box,
+.new_itil_change .ui-form li.html_paragraph .redactor_box,
+.new_itil_release .ui-form li.html_paragraph .redactor_box,
+.edit_itil_problem .ui-form li.html_paragraph .redactor_box,
+.edit_itil_change .ui-form li.html_paragraph .redactor_box,
+.edit_itil_release .ui-form li.html_paragraph .redactor_box,
+.new_helpdesk_ticket .ui-form li.html_paragraph .redactor_box,
+.edit_helpdesk_ticket .ui-form li.html_paragraph .redactor_box,
+.resolution_types .ui-form li.html_paragraph .redactor_box,
+#new_user .ui-form li.html_paragraph .redactor_box,
+.billing-form .ui-form li.html_paragraph .redactor_box,
+.new_admin_canned_responses_response .ui-form li.html_paragraph .redactor_box,
+.edit_admin_canned_responses_response .ui-form li.html_paragraph .redactor_box,
+.new_topic .ui-form li.html_paragraph .redactor_box,
+.edit_topic .ui-form li.html_paragraph .redactor_box {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    padding: 0 10px 10px;
+    background: #f9f9f9
+}
+.new_itil_problem .ui-form li.html_paragraph .redactor_box .redactor_toolbar,
+.new_itil_change .ui-form li.html_paragraph .redactor_box .redactor_toolbar,
+.new_itil_release .ui-form li.html_paragraph .redactor_box .redactor_toolbar,
+.edit_itil_problem .ui-form li.html_paragraph .redactor_box .redactor_toolbar,
+.edit_itil_change .ui-form li.html_paragraph .redactor_box .redactor_toolbar,
+.edit_itil_release .ui-form li.html_paragraph .redactor_box .redactor_toolbar,
+.new_helpdesk_ticket .ui-form li.html_paragraph .redactor_box .redactor_toolbar,
+.edit_helpdesk_ticket .ui-form li.html_paragraph .redactor_box .redactor_toolbar,
+.resolution_types .ui-form li.html_paragraph .redactor_box .redactor_toolbar,
+#new_user .ui-form li.html_paragraph .redactor_box .redactor_toolbar,
+.billing-form .ui-form li.html_paragraph .redactor_box .redactor_toolbar,
+.new_admin_canned_responses_response .ui-form li.html_paragraph .redactor_box .redactor_toolbar,
+.edit_admin_canned_responses_response .ui-form li.html_paragraph .redactor_box .redactor_toolbar,
+.new_topic .ui-form li.html_paragraph .redactor_box .redactor_toolbar,
+.edit_topic .ui-form li.html_paragraph .redactor_box .redactor_toolbar {
+    background: 0;
+    border-bottom: 0
+}
+.new_itil_problem .ui-form li.html_paragraph .redactor_editor,
+.new_itil_change .ui-form li.html_paragraph .redactor_editor,
+.new_itil_release .ui-form li.html_paragraph .redactor_editor,
+.edit_itil_problem .ui-form li.html_paragraph .redactor_editor,
+.edit_itil_change .ui-form li.html_paragraph .redactor_editor,
+.edit_itil_release .ui-form li.html_paragraph .redactor_editor,
+.new_helpdesk_ticket .ui-form li.html_paragraph .redactor_editor,
+.edit_helpdesk_ticket .ui-form li.html_paragraph .redactor_editor,
+.resolution_types .ui-form li.html_paragraph .redactor_editor,
+#new_user .ui-form li.html_paragraph .redactor_editor,
+.billing-form .ui-form li.html_paragraph .redactor_editor,
+.new_admin_canned_responses_response .ui-form li.html_paragraph .redactor_editor,
+.edit_admin_canned_responses_response .ui-form li.html_paragraph .redactor_editor,
+.new_topic .ui-form li.html_paragraph .redactor_editor,
+.edit_topic .ui-form li.html_paragraph .redactor_editor {
+    background: #FFF!important;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #888 inset!important;
+    height: 150px!important
+}
+.new_itil_problem .ui-form li.html_paragraph .redactor_editor:focus,
+.new_itil_change .ui-form li.html_paragraph .redactor_editor:focus,
+.new_itil_release .ui-form li.html_paragraph .redactor_editor:focus,
+.edit_itil_problem .ui-form li.html_paragraph .redactor_editor:focus,
+.edit_itil_change .ui-form li.html_paragraph .redactor_editor:focus,
+.edit_itil_release .ui-form li.html_paragraph .redactor_editor:focus,
+.new_helpdesk_ticket .ui-form li.html_paragraph .redactor_editor:focus,
+.edit_helpdesk_ticket .ui-form li.html_paragraph .redactor_editor:focus,
+.resolution_types .ui-form li.html_paragraph .redactor_editor:focus,
+#new_user .ui-form li.html_paragraph .redactor_editor:focus,
+.billing-form .ui-form li.html_paragraph .redactor_editor:focus,
+.new_admin_canned_responses_response .ui-form li.html_paragraph .redactor_editor:focus,
+.edit_admin_canned_responses_response .ui-form li.html_paragraph .redactor_editor:focus,
+.new_topic .ui-form li.html_paragraph .redactor_editor:focus,
+.edit_topic .ui-form li.html_paragraph .redactor_editor:focus {
+    background: #FFF!important
+}
+.new_itil_problem .ui-form li.html_paragraph .planning_buttons,
+.new_itil_change .ui-form li.html_paragraph .planning_buttons,
+.new_itil_release .ui-form li.html_paragraph .planning_buttons,
+.edit_itil_problem .ui-form li.html_paragraph .planning_buttons,
+.edit_itil_change .ui-form li.html_paragraph .planning_buttons,
+.edit_itil_release .ui-form li.html_paragraph .planning_buttons,
+.new_helpdesk_ticket .ui-form li.html_paragraph .planning_buttons,
+.edit_helpdesk_ticket .ui-form li.html_paragraph .planning_buttons,
+.resolution_types .ui-form li.html_paragraph .planning_buttons,
+#new_user .ui-form li.html_paragraph .planning_buttons,
+.billing-form .ui-form li.html_paragraph .planning_buttons,
+.new_admin_canned_responses_response .ui-form li.html_paragraph .planning_buttons,
+.edit_admin_canned_responses_response .ui-form li.html_paragraph .planning_buttons,
+.new_topic .ui-form li.html_paragraph .planning_buttons,
+.edit_topic .ui-form li.html_paragraph .planning_buttons {
+    margin-right: 1%
+}
+.new_itil_problem .ui-form li .redactor_box,
+.new_itil_change .ui-form li .redactor_box,
+.new_itil_release .ui-form li .redactor_box,
+.edit_itil_problem .ui-form li .redactor_box,
+.edit_itil_change .ui-form li .redactor_box,
+.edit_itil_release .ui-form li .redactor_box,
+.new_helpdesk_ticket .ui-form li .redactor_box,
+.edit_helpdesk_ticket .ui-form li .redactor_box,
+.resolution_types .ui-form li .redactor_box,
+#new_user .ui-form li .redactor_box,
+.billing-form .ui-form li .redactor_box,
+.new_admin_canned_responses_response .ui-form li .redactor_box,
+.edit_admin_canned_responses_response .ui-form li .redactor_box,
+.new_topic .ui-form li .redactor_box,
+.edit_topic .ui-form li .redactor_box {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    padding: 0 10px 10px;
+    background: #f9f9f9
+}
+.new_itil_problem .ui-form li .redactor_box .redactor_toolbar,
+.new_itil_change .ui-form li .redactor_box .redactor_toolbar,
+.new_itil_release .ui-form li .redactor_box .redactor_toolbar,
+.edit_itil_problem .ui-form li .redactor_box .redactor_toolbar,
+.edit_itil_change .ui-form li .redactor_box .redactor_toolbar,
+.edit_itil_release .ui-form li .redactor_box .redactor_toolbar,
+.new_helpdesk_ticket .ui-form li .redactor_box .redactor_toolbar,
+.edit_helpdesk_ticket .ui-form li .redactor_box .redactor_toolbar,
+.resolution_types .ui-form li .redactor_box .redactor_toolbar,
+#new_user .ui-form li .redactor_box .redactor_toolbar,
+.billing-form .ui-form li .redactor_box .redactor_toolbar,
+.new_admin_canned_responses_response .ui-form li .redactor_box .redactor_toolbar,
+.edit_admin_canned_responses_response .ui-form li .redactor_box .redactor_toolbar,
+.new_topic .ui-form li .redactor_box .redactor_toolbar,
+.edit_topic .ui-form li .redactor_box .redactor_toolbar {
+    background: 0;
+    border-bottom: 0
+}
+.new_itil_problem .ui-form li .redactor_editor,
+.new_itil_change .ui-form li .redactor_editor,
+.new_itil_release .ui-form li .redactor_editor,
+.edit_itil_problem .ui-form li .redactor_editor,
+.edit_itil_change .ui-form li .redactor_editor,
+.edit_itil_release .ui-form li .redactor_editor,
+.new_helpdesk_ticket .ui-form li .redactor_editor,
+.edit_helpdesk_ticket .ui-form li .redactor_editor,
+.resolution_types .ui-form li .redactor_editor,
+#new_user .ui-form li .redactor_editor,
+.billing-form .ui-form li .redactor_editor,
+.new_admin_canned_responses_response .ui-form li .redactor_editor,
+.edit_admin_canned_responses_response .ui-form li .redactor_editor,
+.new_topic .ui-form li .redactor_editor,
+.edit_topic .ui-form li .redactor_editor {
+    background: #FFF!important;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #888 inset!important;
+    height: 150px!important
+}
+.new_itil_problem .ui-form li .redactor_editor:focus,
+.new_itil_change .ui-form li .redactor_editor:focus,
+.new_itil_release .ui-form li .redactor_editor:focus,
+.edit_itil_problem .ui-form li .redactor_editor:focus,
+.edit_itil_change .ui-form li .redactor_editor:focus,
+.edit_itil_release .ui-form li .redactor_editor:focus,
+.new_helpdesk_ticket .ui-form li .redactor_editor:focus,
+.edit_helpdesk_ticket .ui-form li .redactor_editor:focus,
+.resolution_types .ui-form li .redactor_editor:focus,
+#new_user .ui-form li .redactor_editor:focus,
+.billing-form .ui-form li .redactor_editor:focus,
+.new_admin_canned_responses_response .ui-form li .redactor_editor:focus,
+.edit_admin_canned_responses_response .ui-form li .redactor_editor:focus,
+.new_topic .ui-form li .redactor_editor:focus,
+.edit_topic .ui-form li .redactor_editor:focus {
+    background: #FFF!important
+}
+.new_itil_problem .select2-container,
+.new_itil_change .select2-container,
+.new_itil_release .select2-container,
+.edit_itil_problem .select2-container,
+.edit_itil_change .select2-container,
+.edit_itil_release .select2-container,
+.new_helpdesk_ticket .select2-container,
+.edit_helpdesk_ticket .select2-container,
+.resolution_types .select2-container,
+#new_user .select2-container,
+.billing-form .select2-container,
+.new_admin_canned_responses_response .select2-container,
+.edit_admin_canned_responses_response .select2-container,
+.new_topic .select2-container,
+.edit_topic .select2-container {
+    min-width: 90%
+}
+.new_itil_problem .default_planned_start_date,
+.new_itil_problem .default_planned_end_date,
+.new_itil_change .default_planned_start_date,
+.new_itil_change .default_planned_end_date,
+.new_itil_release .default_planned_start_date,
+.new_itil_release .default_planned_end_date,
+.edit_itil_problem .default_planned_start_date,
+.edit_itil_problem .default_planned_end_date,
+.edit_itil_change .default_planned_start_date,
+.edit_itil_change .default_planned_end_date,
+.edit_itil_release .default_planned_start_date,
+.edit_itil_release .default_planned_end_date,
+.new_helpdesk_ticket .default_planned_start_date,
+.new_helpdesk_ticket .default_planned_end_date,
+.edit_helpdesk_ticket .default_planned_start_date,
+.edit_helpdesk_ticket .default_planned_end_date,
+.resolution_types .default_planned_start_date,
+.resolution_types .default_planned_end_date,
+#new_user .default_planned_start_date,
+#new_user .default_planned_end_date,
+.billing-form .default_planned_start_date,
+.billing-form .default_planned_end_date,
+.new_admin_canned_responses_response .default_planned_start_date,
+.new_admin_canned_responses_response .default_planned_end_date,
+.edit_admin_canned_responses_response .default_planned_start_date,
+.edit_admin_canned_responses_response .default_planned_end_date,
+.new_topic .default_planned_start_date,
+.new_topic .default_planned_end_date,
+.edit_topic .default_planned_start_date,
+.edit_topic .default_planned_end_date {
+    width: 50%!important;
+    margin-left: 0!important
+}
+.new_itil_problem .button-container,
+.new_itil_change .button-container,
+.new_itil_release .button-container,
+.edit_itil_problem .button-container,
+.edit_itil_change .button-container,
+.edit_itil_release .button-container,
+.new_helpdesk_ticket .button-container,
+.edit_helpdesk_ticket .button-container,
+.resolution_types .button-container,
+#new_user .button-container,
+.billing-form .button-container,
+.new_admin_canned_responses_response .button-container,
+.edit_admin_canned_responses_response .button-container,
+.new_topic .button-container,
+.edit_topic .button-container {
+    width: 96%
+}
+.new_itil_problem .no-data,
+.new_itil_change .no-data,
+.new_itil_release .no-data,
+.edit_itil_problem .no-data,
+.edit_itil_change .no-data,
+.edit_itil_release .no-data,
+.new_helpdesk_ticket .no-data,
+.edit_helpdesk_ticket .no-data,
+.resolution_types .no-data,
+#new_user .no-data,
+.billing-form .no-data,
+.new_admin_canned_responses_response .no-data,
+.edit_admin_canned_responses_response .no-data,
+.new_topic .no-data,
+.edit_topic .no-data {
+    margin-bottom: 20px
+}
+.billing-form .ui-form .select2-container {
+    min-width: 70px;
+    width: 70px
+}
+.billing-form .ui-form #s2id_address_country {
+    min-width: 50%
+}
+.review-form .redactor_box,
+.new_topic .redactor_box,
+.new_post .redactor_box,
+.edit_post .redactor_box {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    padding: 0 10px 10px;
+    background: #f9f9f9
+}
+.review-form .redactor_box .redactor_toolbar,
+.new_topic .redactor_box .redactor_toolbar,
+.new_post .redactor_box .redactor_toolbar,
+.edit_post .redactor_box .redactor_toolbar {
+    background: 0;
+    border-bottom: 0
+}
+.review-form .redactor_editor,
+.new_topic .redactor_editor,
+.new_post .redactor_editor,
+.edit_post .redactor_editor {
+    background: #FFF!important;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #888 inset!important;
+    height: 150px!important
+}
+.review-form .redactor_editor:focus,
+.new_topic .redactor_editor:focus,
+.new_post .redactor_editor:focus,
+.edit_post .redactor_editor:focus {
+    background: #FFF!important
+}
+.citypes .product_header {
+    border-bottom: 1px solid #CCC;
+    box-shadow: 0 4px 0 0 #f4f4f4
+}
+.citypes .product_header .header-opt-menu a:after {
+    border: 0
+}
+.citypes h3 {
+    margin: 10px 0;
+    font-size: 22px
+}
+.citypes #citype-tree {
+    margin: 25px 10px 10px;
+    background: #FFF
+}
+.citypes #citype-tree ul li {
+    font-size: 18px;
+    color: #999;
+    border-left: none;
+    background: 0;
+    border-top: 1px solid #eee
+}
+.citypes #citype-tree ul li:first-child {
+    border-top: 0
+}
+.citypes #citype-tree ul li a {
+    color: #999;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    width: 96%;
+    padding: 1%;
+    height: auto;
+    line-height: inherit
+}
+.citypes #citype-tree ul li a a {
+    width: auto;
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 0 10px;
+    padding: 0;
+    vertical-align: middle;
+    visibility: hidden
+}
+.citypes #citype-tree ul li a.jstree-clicked {
+    background: 0;
+    border: 0
+}
+.citypes #citype-tree ul li a:hover {
+    background: #fbfbfb;
+    border: 0
+}
+.citypes #citype-tree ul li a:hover a {
+    visibility: visible
+}
+.citypes #citype-tree ul li a:hover a:hover {
+    background: transparent;
+    color: #333
+}
+.citypes #citype-tree ul li ul li {
+    font-size: 14px;
+    color: #666
+}
+.citypes #citype-tree ul li ul li:first-child {
+    border-top: 1px solid #eee
+}
+#new_user .ui-form,
+.edit_user .ui-form,
+.billing-form .ui-form,
+.new_admin_canned_responses_response .ui-form,
+.edit_admin_canned_responses_response .ui-form {
+    padding-left: 0
+}
+#new_user .select2-container,
+.edit_user .select2-container,
+.billing-form .select2-container,
+.new_admin_canned_responses_response .select2-container,
+.edit_admin_canned_responses_response .select2-container {
+    width: 102%
+}
+#new_user.ui-form .martop12,
+.edit_user.ui-form .martop12,
+#newCatagory .martop12,
+#editCategory .martop12,
+#catalogItem .martop12 {
+    margin-top: 12px
+}
+#new_user.ui-form div.profile_pic img,
+.edit_user.ui-form div.profile_pic img,
+#newCatagory div.profile_pic img,
+#editCategory div.profile_pic img,
+#catalogItem div.profile_pic img {
+    height: 90px;
+    width: 90px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    box-shadow: none
+}
+#new_user.ui-form .fake-file,
+.edit_user.ui-form .fake-file,
+#newCatagory .fake-file,
+#editCategory .fake-file,
+#catalogItem .fake-file {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    height: 100%!important;
+    width: 80%;
+    cursor: pointer
+}
+#new_user.ui-form .pos-rel,
+.edit_user.ui-form .pos-rel,
+#newCatagory .pos-rel,
+#editCategory .pos-rel,
+#catalogItem .pos-rel {
+    position: relative
+}
+#new_user.ui-form .profile_pic_link,
+.edit_user.ui-form .profile_pic_link,
+#newCatagory .profile_pic_link,
+#editCategory .profile_pic_link,
+#catalogItem .profile_pic_link {
+    text-align: center;
+    margin-top: -6px;
+    width: 90px;
+    background-color: #fafafa;
+    font-size: 12px;
+    cursor: pointer
+}
+#new_user.ui-form .requester-img,
+.edit_user.ui-form .requester-img,
+#newCatagory .requester-img,
+#editCategory .requester-img,
+#catalogItem .requester-img {
+    background-size: 90px 90px;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px
+}
+#new_user.ui-form .error,
+.edit_user.ui-form .error,
+#newCatagory .error,
+#editCategory .error,
+#catalogItem .error {
+    display: block
+}
+.newNode {
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    width: 98%;
+    height: 20px
+}
+.newNode #newNodeForm {
+    width: 75%;
+    float: left
+}
+.newNode #newNodeForm input {
+    width: 50%
+}
+.newNode #newNodeForm input:first-child {
+    width: 30%
+}
+.text_right {
+    text-align: right
+}
+.v-middle {
+    vertical-align: middle
+}
+.known_error {
+    background: none repeat scroll 0 0 #aaa;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0 0 1px #fff;
+    color: #fff;
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 11px;
+    padding: 3px 8px;
+    text-shadow: none;
+    text-transform: uppercase
+}
+h3.admin-title {
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #555;
+    font-weight: 700;
+    padding: 5px 0
+}
+.admin-page .form_wrapper {
+    margin-left: 4.3%;
+    width: 90%
+}
+.admin-page #jira_sync_settings tr td {
+    padding: 10px 5px
+}
+.admin-page #jira_sync_settings tr td .select2-container {
+    width: 340px
+}
+.highlight-textbox-info {
+    width: 100%
+}
+.ui-form h3.analysis-title {
+    margin-bottom: 10px;
+    margin-left: 20px
+}
+.task-duedate.overdue {
+    background: none repeat scroll 0 0 #d26260;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 100%;
+    padding: 5px
+}
+.itil-planning .add_cab .add_cab_inner .cab-header {
+    border-radius: 5px 5px 0 0;
+    padding: 10px
+}
+.error-flash {
+    position: fixed;
+    left: 40%;
+    top: 0
+}
+.announcements {
+    background: #FFF;
+    border: 1px solid #e9e9e9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px
+}
+.announcements #announcements_container {
+    margin-bottom: 20px;
+    color: #999
+}
+.announcements #announcements_container h3 {
+    font-weight: 700;
+    color: #555;
+    height: 60px
+}
+.announcements #announcements_container .announcement_title {
+    font-size: 16px
+}
+.announcements #announcements_container .announcement_time {
+    font-size: 12px;
+    color: #ccc
+}
+.announcements .itil-add-link {
+    margin-bottom: 0!important;
+    position: relative;
+    top: -3px
+}
+.announcements .pull-right a {
+    font-size: 30px;
+    color: #4d769f;
+    letter-spacing: -10px;
+    margin-top: 4px
+}
+.announcements .pull-right a.disabled {
+    color: #CCC
+}
+.announcement-detail .request_details {
+    margin: 0
+}
+.announcement-detail .request_details .description .user_details a.user_name {
+    color: #09c
+}
+.announcement-detail .request_details .description .user_details a.user_name:hover {
+    color: #007399
+}
+.announcement-detail .request_details .description .user_details .info {
+    margin-top: -4px!important;
+    font-size: 12px;
+    color: #CCC
+}
+.announcement-detail .new_post {
+    padding: 0 20px 0 70px
+}
+.announcement-detail .new_post h4 {
+    margin-left: 0
+}
+.modal {
+    background-image: none!important
+}
+.modal .modal-header h3 {
+    color: #333!important;
+    font-weight: 500!important
+}
+.modal .modal-body {
+    padding: 5px 20px!important;
+    min-height: 200px
+}
+.modal .modal-body .ui-form li.sloading {
+    padding: 0
+}
+.modal .modal-body .ui-form li.sloading .select2-container {
+    visibility: hidden
+}
+.modal .modal-footer {
+    padding: 10px 20px 15px!important;
+    border-top: 1px solid #CCC!important;
+    margin-top: 10px
+}
+.modal .modal-footer a:last-child {
+    margin-right: 0
+}
+#ticket_pagination a {
+    display: inline-block
+}
+.jstree-default a ins.jstree-icon {
+    display: none!important
+}
+.jstree-default a i {
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif
+}
+.jstree-default a i:before {
+    font-family: 'freshicons';
+    margin-right: 5px;
+    position: relative;
+    top: 0;
+    font-style: normal;
+    font-weight: 300;
+    color: #999;
+    content: "\e09a";
+    -webkit-font-smoothing: antialiased
+}
+.jstree-default a i.trash:before {
+    content: "\e073";
+    color: #1292a6
+}
+.jstree-default a i.hardware:before {
+    content: "\e091";
+    color: #1292a6
+}
+.jstree-default a i.workstation:before {
+    content: "\e07f"
+}
+.jstree-default a i.network:before {
+    content: "\e057";
+    color: #1292a6
+}
+.jstree-default a i.datacenter:before {
+    content: "\e081"
+}
+.jstree-default a i.storage:before {
+    content: "\e0a2"
+}
+.jstree-default a i.mobiledevices:before {
+    content: "\e051"
+}
+.jstree-default a i.monitor:before {
+    content: "\e07e"
+}
+.jstree-default a i.printer:before {
+    content: "\e07d"
+}
+.jstree-default a i.scanner:before {
+    content: "\e07c"
+}
+.jstree-default a i.projector:before {
+    content: "\e09d"
+}
+.jstree-default a i.otherdevices:before {
+    content: "\e098"
+}
+.jstree-default a i.software:before {
+    content: "\e082";
+    color: #1292a6
+}
+.jstree-default a i.services:before {
+    content: "\e0a0";
+    color: #1292a6
+}
+.jstree-default a i.consumable:before {
+    content: "\e07b";
+    color: #1292a6
+}
+.jstree-default a i.document:before {
+    content: "\e039";
+    color: #1292a6
+}
+.jstree-default a i.others:before {
+    content: "\e098";
+    color: #1292a6
+}
+.jstree-default a i.webserver:before {
+    content: "\e0a8"
+}
+.jstree-default a i.operatingsystem:before {
+    content: "\e084"
+}
+.jstree-default a i.database:before {
+    content: "\e09c"
+}
+.jstree-default a i.applications:before {
+    content: "\e09e"
+}
+.jstree-default a i.itservice:before {
+    content: "\e09f";
+    font-size: 15px
+}
+.jstree-default a i.businessservice:before {
+    content: "\e0a9"
+}
+.jstree-default a i.firewall:before {
+    content: "\e609"
+}
+.jstree-default a i.switch:before {
+    content: "\e60b"
+}
+.jstree-default a i.accesspoint:before {
+    content: "\e610"
+}
+.jstree-default a i.router:before {
+    content: "\e60a"
+}
+.jstree-default a i.mobile:before {
+    content: "\e051"
+}
+.jstree-default a i.tablet:before {
+    content: "\e60c"
+}
+.jstree-default a i.ups:before {
+    content: "\e60d"
+}
+.jstree-default a i.rack:before {
+    content: "\e60e"
+}
+.jstree-default a i.disk:before {
+    content: "\e082"
+}
+.jstree-default a i.computer:before {
+    content: "\e07f"
+}
+.jstree-default a i.desktop:before {
+    content: "\e07e"
+}
+.jstree-default a i.laptop:before {
+    content: "\e60f"
+}
+.jstree-default a i.server:before {
+    content: "\e0a4"
+}
+.jstree-default a i.vmwareserver:before {
+    content: "\e618"
+}
+.jstree-default a i.emailservice:before {
+    content: "\e608"
+}
+.jstree-default a i.supportservice:before {
+    content: "\e00c"
+}
+.jstree-default a i.department:before {
+    content: "\e079"
+}
+.jstree-default a i.agent:before {
+    content: "\e605"
+}
+.jstree-default a i.requester:before {
+    content: "\e083"
+}
+.jstree-default a i.cloud:before {
+    content: "\e623";
+    color: #1292a6;
+    top: 2px
+}
+.jstree-default a i.aws:before {
+    content: "\e61c";
+    color: #1292a6
+}
+.jstree-default a i.ec2:before {
+    content: "\e61f";
+    color: #1292a6
+}
+.jstree-default a i.rds:before {
+    content: "\e621";
+    color: #1292a6
+}
+.jstree-default a i.ebs:before {
+    content: "\e61e";
+    color: #1292a6
+}
+#cmdb-tree>ul>li>a>i:before {
+    color: #17b7d0
+}
+.detach_modue_show.margin10,
+.edit_itil_it_task .row-fluid.margin10 {
+    margin-top: 20px
+}
+.detach_modue_show.margin10 .span3 label,
+.edit_itil_it_task .row-fluid.margin10 .span3 label {
+    color: #AAA
+}
+.detach_modue_show h3,
+.edit_itil_it_task .row-fluid h3 {
+    background: none repeat scroll 0 0 #f7f7f7;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 500px
+}
+.detach_modue_show h3 a,
+.edit_itil_it_task .row-fluid h3 a {
+    color: #09c;
+    font-size: 16px;
+    font-weight: 500
+}
+.detach_modue_show p,
+.edit_itil_it_task .row-fluid p {
+    border-right-width: 5px;
+    margin-top: 10px;
+    padding-left: 5px
+}
+.detach_modue_show .item_properties,
+.edit_itil_it_task .row-fluid .item_properties {
+    margin-top: 15px!important
+}
+.detach_modue_show .item_properties .span4,
+.edit_itil_it_task .row-fluid .item_properties .span4 {
+    margin-left: 5px
+}
+.detach_modue_show .item_properties .span4 span:first-child,
+.edit_itil_it_task .row-fluid .item_properties .span4 span:first-child {
+    color: #999;
+    font-size: 13px;
+    line-height: 10px
+}
+.itil-hide {
+    display: none
+}
+.associate_ci_list {
+    margin-bottom: 10px
+}
+.associate_ci_list .associate_ci_item {
+    float: left;
+    margin-right: .5%;
+    margin-bottom: .5%;
+    border: 1px solid #CCC;
+    background: #f4fcff;
+    padding: 2px 10px;
+    border-radius: 5px;
+    box-sizing: border-box
+}
+.associate_ci_list .associate_ci_item span:first-child {
+    display: inline-block;
+    float: left
+}
+.associate_ci_list .associate_ci_item span:last-child {
+    display: inline-block;
+    float: right
+}
+.associate_ci_list .associate_ci_item span .icon-remove {
+    color: #aaa;
+    margin-left: 5px
+}
+.associate_ci_list .associate_ci_item span .icon-remove:hover {
+    color: #333
+}
+.associate_ci_list .associate_ci_item span.icon-minus {
+    margin-left: 5px;
+    cursor: pointer
+}
+#ci_edit .btns {
+    padding: 20px 0 0 20px
+}
+.itil_new_form ul.ui-form li .item-list h3.title,
+.itil_new_form ul.ui-form li .item-list h3 a {
+    color: #aaa;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0
+}
+.itil_new_form ul.ui-form li .item-list h3 a {
+    color: #09c
+}
+div.uploader {
+    cursor: default;
+    overflow: hidden;
+    position: relative;
+    width: 250px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle
+}
+#csvfile+.error {
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+.uploader * {
+    margin: 0;
+    padding: 0
+}
+div.uploader input {
+    border: medium none;
+    bottom: 0;
+    cursor: default;
+    float: right;
+    height: 25px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 250px
+}
+div.uploader span.filename {
+    cursor: default;
+    display: block;
+    float: left;
+    overflow: hidden;
+    padding: 0 10px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #777;
+    font-size: 11px;
+    width: 130px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #FFF;
+    border: 1px solid #aaa;
+    border-bottom: 1px solid #CCC;
+    box-shadow: 0 4px 6px -4px #ccc inset, 0 2px 4px -3px #aaa inset;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px
+}
+div.uploader span.action {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    overflow: hidden;
+    padding: 4px 10px;
+    border-left: none
+}
+#cmdb_new_item #accordion .span6 .clearfix {
+    width: 100%
+}
+#cmdb_new_item #accordion .span6 .clearfix span {
+    width: 45%
+}
+#cmdb_new_item #accordion .span6 .clearfix span:last-child {
+    margin-left: 5%
+}
+#cmdb_new_item #accordion .span6 .clearfix span .select2 {
+    width: 47%
+}
+#cmdb_new_item .field_header {
+    color: #fff
+}
+.modal-open .product_type_form #product_name_title {
+    background: none repeat scroll 0 0 #eee;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px!important;
+    padding: 5px 10px!important
+}
+.modal-open .product_type_form .row-fluid .span4 {
+    width: 45%;
+    margin-left: 0!important
+}
+.modal-open .product_type_form .row-fluid .span4:last-child {
+    margin-left: 5%!important;
+    width: 50%
+}
+.modal-open .product_type_form .row-fluid .span4:last-child label {
+    display: block!important;
+    margin-top: 4px
+}
+.modal-open .product_type_form .row-fluid .span4:last-child .select2-container {
+    width: 49%
+}
+.modal-open .product_type_form .row-fluid .span4:last-child .select2-container:last-child {
+    margin-left: 5%
+}
+.cmdb_requests {
+    width: 100%;
+    border-collapse: collapse
+}
+.cmdb_requests tr th {
+    text-align: right;
+    padding: 5px;
+    background: #EEE;
+    border-bottom: 1px solid #CCC
+}
+.cmdb_requests tr td {
+    text-align: left;
+    border-bottom: 1px solid #CCC;
+    padding: 5px;
+    margin: 0
+}
+.cmdb_requests tr td:last-child {
+    text-align: right
+}
+.cmdb_requests tr td:first-child {
+    padding-left: 20px;
+    width: 50%
+}
+.cmdb_requests tr td .icon-trash {
+    visibility: hidden
+}
+.cmdb_requests tr td label {
+    display: inline-block;
+    color: #aaa
+}
+.cmdb_requests tr td a {
+    word-break: break-all
+}
+.cmdb_requests tr:hover td .icon-trash {
+    visibility: visible
+}
+.cmdb_requests tr:last-child td {
+    border-bottom: 0
+}
+.size_exceeded {
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+    color: #d8b06b;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px 4px 4px 4px
+}
+.size_exceeded span {
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-left: 10px;
+    padding-right: 5px
+}
+.hidden {
+    visibility: hidden
+}
+.visible {
+    visibility: visible
+}
+#inner .sidebar .sidepanel.trial_expiry {
+    background: #fefcea;
+    border: 1px solid #e9e9e9;
+    box-shadow: none;
+    margin: 10px 0
+}
+#inner .sidebar .sidepanel.trial_expiry p {
+    font-weight: 300;
+    color: #333
+}
+#inner .sidebar .sidepanel.trial_expiry h3 {
+    color: #a90329;
+    font-weight: 400
+}
+#inner .sidebar .sidepanel.trial_expiry .trial-background a {
+    text-shadow: none
+}
+#itil_product_form .form_wrapper .row-fluid .span6 div a.itil-add-link {
+    padding-bottom: 0!important
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    body,
+    label,
+    input,
+    div,
+    span,
+    td,
+    th,
+    button,
+    select,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    ul,
+    li {
+        -webkit-font-smoothing: subpixel-antialiased
+    }
+    .citypes #citype-tree ul li a a {
+        top: -5px
+    }
+    .citypes #citype-tree ul li a a.edit-link,
+    .citypes #citype-tree ul li a a.delete-link {
+        position: relative;
+        top: 1px
+    }
+}
+div.member-approval {
+    border-bottom: 1px dashed #ccc
+}
+.approvals_header h3 span {
+    color: #333;
+    font-weight: 200
+}
+.approval-sidepanel {
+    margin-top: 30px
+}
+.approval-sidepanel .item-summery label {
+    color: #787878
+}
+.approval-sidepanel .item-summery div:nth-of-type(2) {
+    color: #adadad;
+    margin: 0
+}
+.approval-sidepanel .item-summery span {
+    margin-left: 0
+}
+.approval-sidepanel+div {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 30px 10px 10px 10px;
+    padding: 10px 0
+}
+.approval-sidepanel+div h3 {
+    font-size: 16px;
+    margin-bottom: 10px
+}
+.approval-sidepanel+div .pull-left:nth-of-type(2) {
+    width: 70%
+}
+.approval-sidepanel+div .pull-left:nth-of-type(2) * {
+    word-break: break-word
+}
+.blue-bg-container {
+    background-color: #f6fcfe;
+    border: 2px solid #ddd;
+    padding: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    margin: 30px 20px 20px 20px
+}
+.itil-schedules .big-info .small {
+    font-size: 75%
+}
+.itil-schedules .big-info .small a {
+    font-size: 95%
+}
+.itil-schedules .list-page-body {
+    margin-top: 30px!important
+}
+.itil-schedules .list-page-body .agent-list-page td {
+    vertical-align: top
+}
+.itil-schedules .list-page-body .agent-list-page td .muted {
+    font-size: 12px;
+    padding-top: 2px
+}
+.itil-schedules .list-page-body .agent-list-page td .muted:first-of-type {
+    padding-top: 5px
+}
+.itil-schedules .list-page-body .agent-list-page td:first-child {
+    width: 12%
+}
+.itil-schedules .list-page-body .agent-list-page td:nth-child(2) {
+    width: 70%
+}
+.itil-schedules .list-page-body .agent-list-page td:last-child {
+    text-align: right
+}
+.schedule_new_form #hour,
+.schedule_new_form #min {
+    width: 25px
+}
+.schedule_new_form #itil_schedule_name {
+    width: 98.5%
+}
+.schedule_new_form .w100 {
+    width: 100%!important
+}
+.schedule_new_form .w80 {
+    width: 80%
+}
+.schedule_new_form .mw66 {
+    min-width: 66px
+}
+.schedule_new_form #ondate {
+    width: 10%;
+    margin-left: 5%
+}
+.schedule_new_form #days,
+.schedule_new_form #date,
+.schedule_new_form #ending_date,
+.schedule_new_form #occurence_count,
+.schedule_new_form #occurence_count span {
+    margin-left: 4.5%
+}
+.schedule_new_form #month {
+    width: 53.85%
+}
+.schedule_new_form #time {
+    width: 12%;
+    position: relative
+}
+.schedule_new_form #time #mocktime {
+    width: 70px
+}
+.schedule_new_form #time .timeEntry-control {
+    position: absolute;
+    top: 34px;
+    left: 61px;
+    width: 15px!important;
+    background-position: 0 0!important
+}
+.schedule_new_form h3.admin-title {
+    font-weight: 400
+}
+.schedule_new_form .scheduleform-wrapper {
+    width: 100%
+}
+.schedule_new_form label.control-label {
+    color: #999;
+    font-size: 13px;
+    font-weight: 400
+}
+.schedule_new_form label.error {
+    font-size: 13px!important;
+    border: 1px solid #efefef;
+    background: #fefcea;
+    display: block;
+    font-style: normal;
+    margin: 2px -3px;
+    padding: 8px 12px;
+    font-weight: 400
+}
+.schedule_new_form .positive_number+.error {
+    width: 140px
+}
+.schedule_new_form .ui-form {
+    width: 105%;
+    margin: 0;
+    padding-left: 0;
+    margin-top: 45px
+}
+.schedule_new_form .ui-form li:first-child {
+    padding-bottom: 0
+}
+.schedule_new_form .ui-form li textarea {
+    width: 94%
+}
+.schedule_new_form .ui-form li.nested_field,
+.schedule_new_form .ui-form li.date {
+    width: 50%
+}
+.schedule_new_form .ui-form li.default_subject,
+.schedule_new_form .ui-form li.default_requester,
+.schedule_new_form .ui-form li.custom_text {
+    width: 94.7%
+}
+.schedule_new_form .ui-form li.checkbox label {
+    left: 3px
+}
+.schedule_new_form .ui-form li.custom_checkbox label.error {
+    width: 92%
+}
+.schedule_new_form .ui-form li.custom_paragraph label.error {
+    width: 93%
+}
+.schedule_new_form .ui-form li.nested_field label.error,
+.schedule_new_form .ui-form li.dropdown_blank label.error,
+.schedule_new_form .ui-form li.custom_decimal label.error,
+.schedule_new_form .ui-form li.custom_number label.error {
+    width: 86%
+}
+.schedule_new_form .weeklyCls {
+    margin-left: 4.5%;
+    width: 10%!important
+}
+.schedule_new_form #mocktime+.error {
+    width: 398px
+}
+.schedule_new_form #occurence_text {
+    margin-left: -4%
+}
+.breakall {
+    word-break: break-all
+}
+.loading-right {
+    background-position: 98% center!important;
+    background-image: url(/images/animated/ajax-loader.gif?1442066158)!important;
+    background-repeat: no-repeat!important
+}
+.simple-confirm p {
+    padding: 10px
+}
+.simple-confirm .ui-icon {
+    display: inline-block;
+    float: left;
+    margin: 4px 7px 20px 0
+}
+.grey-ellipse {
+    border-radius: 16px;
+    font-size: 10px;
+    padding: 3px 9px;
+    text-transform: uppercase;
+    background-color: #bfbfbf;
+    color: white
+}
+#groupDOM .conditionset fieldset .delete {
+    right: -3px
+}
+#groupDOM .select2-container-multi {
+    margin-top: 2px;
+    width: 54%!important
+}
+#groupDOM .select2-container-multi ul {
+    margin: 0
+}
+#groupDOM .select2-container-multi li a {
+    float: left!important;
+    margin: 0 0 0 8px!important
+}
+.btngrp-drop-align {
+    min-width: 130px;
+    width: 140px;
+    top: 33px
+}
+#groups.tabs {
+    padding-left: 0;
+    padding-right: 0
+}
+#groups.tabs li.active a {
+    width: 65%;
+    border-bottom: 4px solid #bdbdbd
+}
+#groups.tabs li>a {
+    padding-left: 0;
+    background: 0;
+    border: 0;
+    font-size: 15px;
+    font-weight: 500
+}
+#requester-group-list .no-row {
+    border-top: 1px solid #DDD;
+    padding: 10px
+}
+#members-table thead {
+    background: none repeat scroll 0 0 #8d8d8d;
+    color: #EEE
+}
+#members-table thead th {
+    border-bottom: 0;
+    padding: 8px
+}
+#members-table tr.odd td {
+    background-color: #fbfbfb
+}
+#members-table tr.even td {
+    background-color: #fff
+}
+#members-table td {
+    padding: 12px;
+    word-wrap: break-word;
+    vertical-align: middle
+}
+#members-table_paginate {
+    float: none;
+    text-align: center;
+    margin-top: 25px
+}
+#members-table_paginate>a:first-child,
+#members-table_paginate>a:last-child {
+    display: none
+}
+#members-table_paginate a.paginate_active {
+    background-color: #595959;
+    color: #fff!important;
+    box-shadow: 0 0 6px black inset, 0 1px 0 white
+}
+#members-table_paginate a.paginate_button_disabled {
+    opacity: .5
+}
+#members-table_paginate a {
+    margin: 0;
+    border-radius: 0;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background: #fff
+}
+#members-table_paginate span a {
+    border-right: 0
+}
+#members-table_paginate .previous {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: 0
+}
+#members-table_paginate .next {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px
+}
+.w100 {
+    width: 100%
+}
+.w200px {
+    width: 200px
+}
+#PortalSettings .fav-icon-cls img {
+    height: 20px;
+    width: 20px;
+    max-height: 20px;
+    max-width: 20px
+}
+.wrapper-shadow .icon-bell {
+    font-size: 26px;
+    margin: 10px 8px 0 0;
+    cursor: pointer;
+    color: white
+}
+.wrapper-shadow .pos-rel {
+    position: relative
+}
+.wrapper-shadow .header-wrapper .pos-rel {
+    float: right
+}
+.wrapper-shadow .notify-circle {
+    background-color: #cf002f;
+    border-radius: 2px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    font-size: 10px;
+    left: 10px;
+    text-align: center;
+    padding: 0 2px;
+    line-height: 1.1
+}
+.wrapper-shadow .notification-popup {
+    background-color: #fff;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 3px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 3px 8px;
+    border-bottom: 15px solid #eee;
+    border-radius: 5px;
+    position: absolute;
+    top: 45px;
+    left: -220px;
+    z-index: 100;
+    width: 400px;
+    color: black;
+    padding: 0
+}
+.wrapper-shadow .notification-popup:after,
+.wrapper-shadow .notification-popup:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none
+}
+.wrapper-shadow .notification-popup:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 9px;
+    margin-left: -15px
+}
+.wrapper-shadow .notification-popup:before {
+    border-color: rgba(238, 238, 238, 0);
+    border-bottom-color: #eee;
+    border-width: 10px;
+    margin-left: -16px
+}
+.wrapper-shadow .notification-popup table {
+    width: 100%
+}
+.wrapper-shadow .notification-popup table td {
+    text-align: right;
+    vertical-align: top;
+    padding: 6px;
+    border-bottom: 1px solid #ccc
+}
+.wrapper-shadow .notification-popup table td a {
+    word-break: break-word
+}
+.wrapper-shadow .notification-popup table td div,
+.wrapper-shadow .notification-popup table td span {
+    font-size: 12px;
+    color: #a2a2a2
+}
+.wrapper-shadow .notification-popup table td:first-child {
+    text-align: left
+}
+.wrapper-shadow .notification-popup table tr:last-child td {
+    border-bottom: 0
+}
+.wrapper-shadow .notification-popup.w400 {
+    width: 300px
+}
+.wrapper-shadow .notification-popup.w400:after,
+.wrapper-shadow .notification-popup.w400:before {
+    left: 79%
+}
+.wrapper-shadow .notification-popup.w400:after {
+    border-bottom-color: #eee
+}
+.wrapper-shadow .notification-popup .notify-header {
+    background-color: #eee;
+    padding: 10px 3px 10px 12px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #888;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+.wrapper-shadow .notification-popup .notify-header a {
+    font-style: italic;
+    font-size: 12px
+}
+.wrapper-shadow .notification-popup .notification-wrapper {
+    max-height: 300px;
+    overflow: auto
+}
+.wrapper-shadow .notification-popup .notification-wrapper .notify-items {
+    padding: 10px;
+    border-top: 1px solid #eee;
+    color: #a4a2a2;
+    line-height: 20px
+}
+.wrapper-shadow .notification-popup .notification-wrapper .notify-items .no-row {
+    text-align: center
+}
+.wrapper-shadow .notification-popup .notification-wrapper .requester-name {
+    color: #1292a6;
+    font-weight: bold;
+    max-width: 80px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top
+}
+.wrapper-shadow .notification-popup .notification-wrapper .requester-img img {
+    height: 30px;
+    width: 30px
+}
+.wrapper-shadow .notification-popup .notification-wrapper .notify-content {
+    width: 85%
+}
+.wrapper-shadow .notification-popup .notification-wrapper .notify-content div {
+    font-weight: 300;
+    font-size: 13px;
+    color: #666
+}
+.wrapper-shadow .notification-popup .notification-wrapper .notify-content .since {
+    font-size: 12px;
+    line-height: 1;
+    padding-left: 0;
+    color: #999
+}
+.wrapper-shadow .notification-popup .notification-wrapper .notify-content a {
+    margin-left: 0!important
+}
+.wrapper-shadow .header-referral-wrapper {
+    float: left
+}
+.wrapper-shadow .header-referral-wrapper a {
+    margin: 10px
+}
+.wrapper-shadow .header-referral-wrapper .ficon-gift {
+    color: #fff
+}
+.wrapper-shadow .header-referral-wrapper .ficon-gift:before {
+    margin-top: 6px;
+    font-size: 23px
+}
+.edit_itil_it_task .span3 .select2-choice,
+#add_task_form .span3 .select2-choice {
+    width: auto
+}
+.edit_itil_it_task .mtop-2px,
+#add_task_form .mtop-2px {
+    margin-top: -2px
+}
+.notification-popup .preview_pic img {
+    border-radius: 50%;
+    border: solid 1px #1292a6
+}
+.header-notification-wrapper .popover-wrapper .tabs-left {
+    background-color: #2691a8
+}
+.header-notification-wrapper .popover-wrapper .nav-tabs li:hover {
+    background-color: #278397
+}
+.header-notification-wrapper .popover-wrapper .nav-tabs li.active {
+    background-color: #186373
+}
+.header-notification-wrapper .popover-wrapper .nav-tabs li.active:hover {
+    background-color: #278397
+}
+.header-notification-wrapper .popover-wrapper .header-border {
+    border-bottom: 1px solid #1292a6
+}
+.header-notification-wrapper .tab-content {
+    border: 0;
+    margin-top: -6px
+}
+.header-notification-wrapper .tab-content .search-head {
+    margin-top: 6px
+}
+.header-notification-wrapper .notification-feedback .contact-feedback .feedback-wrapper .feedback-btn:hover {
+    background-color: #1292a6;
+    border-color: #067283;
+    color: white
+}
+.header-notification-wrapper .notify-search-content .search_list .list_content a,
+.header-notification-wrapper .notify-search-content .notify-fra a {
+    color: #1292a6
+}
+.header-notification-wrapper .content-notify-list.older-notification {
+    background-color: #f5f5f5;
+    border-top: 1px solid #f3f3f3
+}
+.header-notification-wrapper .content-notify-list.older-notification .notify-title {
+    color: #aaa
+}
+.header-notification-wrapper .content-notify-list.older-notification .notify-content {
+    color: #a3a3a3
+}
+.header-notification-wrapper .content-notify-list .notify-title {
+    color: #4b75a1
+}
+.header-notification-wrapper .content-head {
+    color: #333
+}
+.header-notification-wrapper div.sloading.loading-small {
+    margin-top: 20px
+}
+.header-notification-wrapper div.sloading.loading-small div>div>div {
+    background: #fff!important
+}
+.custom_app_preview .l_placeholder {
+    margin-top: 8px
+}
+.sub-tabs {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff;
+    text-transform: uppercase
+}
+.sub-tabs a {
+    padding: 7px;
+    display: inline-block
+}
+.sub-tabs span {
+    color: black;
+    margin-right: 30px;
+    font-size: 12px;
+    font-weight: 500
+}
+.sub-tabs .selected {
+    padding: 7px;
+    border-bottom: 3px solid #1292a6
+}
+[data-ellipsis=true] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.ticket-save .dropdown-menu {
+    left: auto;
+    min-width: 130px;
+    right: -2px;
+    top: 13px
+}
+.ticket-save .dropdown-menu::after,
+.ticket-save .dropdown-menu::before {
+    display: none
+}
+.ticket_list .containerFull {
+    padding-left: 5px
+}
+.ticket_list #page-slider,
+.ticket_list .page-filter {
+    position: relative;
+    cursor: pointer
+}
+.ticket_list #page-slider div,
+.ticket_list .page-filter div {
+    position: absolute;
+    width: 23px;
+    height: 27px;
+    left: -26px;
+    background-color: #505050;
+    color: white;
+    top: 16px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px
+}
+.ticket_list #page-slider i,
+.ticket_list .page-filter i {
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 3px
+}
+.ticket_list #page-slider {
+    z-index: 100
+}
+.ticket_list #page-slider+span {
+    margin-left: 5px
+}
+.ticket_list .page-filter {
+    z-index: 125
+}
+.ticket_list .page-filter div {
+    width: 24px
+}
+.ticket_list .page-filter i {
+    margin-left: 2px
+}
+.ticket_list #leftcol {
+    margin-top: 20px;
+    float: left
+}
+.ticket_list #leftcol .filter-link {
+    word-wrap: break-word;
+    cursor: pointer
+}
+.ticket_list #leftcol .leftFilter {
+    padding-left: 5px
+}
+.ticket_list #leftcol #more {
+    margin-top: 15px
+}
+.ticket_list #leftcol #more a,
+.ticket_list #leftcol #more i {
+    cursor: pointer
+}
+.ticket_list #leftcol #more i {
+    font-size: 17px;
+    margin-right: 5px
+}
+.ticket_list #leftcol .lead .icon-close2 {
+    color: #a3a3a3;
+    cursor: pointer;
+    margin-right: 6px
+}
+.ticket_list #leftcol #s2id_more_options {
+    width: 190px;
+    margin-top: 20px
+}
+.ticket_list #leftcol .date_value {
+    width: 179px!important
+}
+.ticket_list #rightCol {
+    margin-top: 10px
+}
+.ticket_list #rightCol .sort-bar .page_info {
+    top: 0
+}
+.ticket_list #SortMenu {
+    margin-left: 0!important
+}
+.over-hidden {
+    overflow: hidden!important
+}
+.disable-link {
+    pointer-events: none
+}
+.itil-icon-approved {
+    color: #30c019
+}
+.itil-icon-rejected {
+    color: #d82727
+}
+.itil-icon-cancelled-requested {
+    color: #aaa
+}
+span.itil-status-approved {
+    color: white;
+    margin: 0;
+    padding: 4px;
+    background-color: #30c019;
+    text-transform: uppercase;
+    font-size: 12px
+}
+span.itil-status-rejected {
+    color: white;
+    margin: 0;
+    padding: 4px;
+    background-color: #d82727;
+    text-transform: uppercase;
+    font-size: 12px
+}
+span.itil-status-requested,
+span.itil-status-cancelled,
+span.itil-status-not-requested {
+    color: white;
+    margin: 0;
+    padding: 4px;
+    background-color: #aaa;
+    text-transform: uppercase;
+    font-size: 12px
+}
+.f15px {
+    font-size: 15px
+}
+.readmore-js-toggle {
+    font-size: 12px;
+    margin-top: 2px;
+    display: inline-block!important;
+    width: auto!important
+}
+.problem_type {
+    position: relative;
+    border: 1px solid #c6c6c6;
+    padding: 10px
+}
+.problem_type h1 {
+    font-size: 11px;
+    color: #000;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer
+}
+.problem_type textarea {
+    display: none
+}
+.analysis_disp {
+    background: #fff;
+    position: relative;
+    border: 1px solid #c6c6c6;
+    line-height: 1.4em;
+    border-radius: 5px 5px 3px 3px;
+    min-height: 150px;
+    width: 100%
+}
+.analysis_disp div {
+    padding: 15px
+}
+.analysis_bar {
+    width: 100%;
+    z-index: 1000;
+    padding: 0;
+    border: 1px solid #c6c6c6;
+    margin-top: 5px;
+    background: #fff;
+    background: -moz-linear-gradient(top, white 0, #f6f6f6 72%, #f7f7f7 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(72%, #f6f6f6), color-stop(100%, #f7f7f7));
+    background: -webkit-linear-gradient(top, white 0, #f6f6f6 72%, #f7f7f7 100%);
+    background: -o-linear-gradient(top, white 0, #f6f6f6 72%, #f7f7f7 100%);
+    background: -ms-linear-gradient(top, white 0, #f6f6f6 72%, #f7f7f7 100%);
+    background: linear-gradient(to bottom, #fff 0, #f6f6f6 72%, #f7f7f7 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f7f7f7', GradientType=0)
+}
+.analysis_bar span {
+    position: relative;
+    margin: 8px 5px;
+    color: #369;
+    cursor: pointer!important
+}
+.analysis_bar .problem-buttons {
+    margin-right: 5px;
+    margin-top: 5px
+}
+.problem-attachments {
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px 5px 3px 3px;
+    border: 1px solid #c6c6c6
+}
+.problem-attachments h4 {
+    font-size: 10px;
+    font-variant: small-caps;
+    font-weight: bold;
+    margin: 5px 3px 3px 5px;
+    color: #369;
+    text-shadow: 1px 1px 3px #c6c6c6
+}
+.problem-attachments .delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10000
+}
+.problem-attachments .attach_list {
+    padding: 5px
+}
+.problem-attachments .attach_list li {
+    float: left;
+    margin: 0 5px;
+    position: relative
+}
+#symptom_file,
+#cause_file,
+#impact_file {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+.reminders,
+.todo {
+    background-color: transparent;
+    border: 0
+}
+.reminders ul,
+.todo ul {
+    display: block;
+    margin: 2px 0;
+    border-top: 0
+}
+.reminders ul li,
+.todo ul li {
+    border-bottom: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    font-size: 12px
+}
+.reminders ul li#empty_tasks:hover,
+.todo ul li#empty_tasks:hover {
+    cursor: default;
+    background: transparent
+}
+.reminders ul li:hover,
+.reminders ul li.active,
+.todo ul li:hover,
+.todo ul li.active {
+    cursor: pointer;
+    background: #f0f0f0
+}
+.reminders ul li:hover .delete,
+.reminders ul li.active .delete,
+.todo ul li:hover .delete,
+.todo ul li.active .delete {
+    visibility: visible
+}
+#tasklist .task:hover .task_title,
+#my_tasks_list .task:hover .task_title {
+    font-weight: 400
+}
+#tasklist .task .task_status_change,
+#my_tasks_list .task .task_status_change {
+    display: none
+}
+#tasklist .task .task_status,
+#my_tasks_list .task .task_status {
+    margin-right: 20px;
+    font-style: italic;
+    font-size: 11px
+}
+#tasklist .task_title span,
+#my_tasks_list .task_title span {
+    color: #999
+}
+#tasklist .task_input,
+#my_tasks_list .task_input {
+    position: relative;
+    left: -2px;
+    top: -12px
+}
+#tasklist .icon-problem,
+#my_tasks_list .icon-problem {
+    font-family: roboto
+}
+#tasklist .icon-problem:before,
+#my_tasks_list .icon-problem:before {
+    font-family: freshicons;
+    content: "\e001";
+    color: #1292a6;
+    margin-left: -17px;
+    margin-right: 5px
+}
+#tasklist .icon-change,
+#my_tasks_list .icon-change {
+    font-family: roboto
+}
+#tasklist .icon-change:before,
+#my_tasks_list .icon-change:before {
+    font-family: freshicons;
+    content: "\e053";
+    color: #1292a6;
+    margin-left: -17px;
+    margin-right: 5px
+}
+#tasklist .icon-ticket,
+#my_tasks_list .icon-ticket {
+    font-family: roboto
+}
+#tasklist .icon-ticket:before,
+#my_tasks_list .icon-ticket:before {
+    font-family: freshicons;
+    content: "\e063";
+    color: #1292a6;
+    margin-left: -17px;
+    margin-right: 5px
+}
+#tasklist .icon-release,
+#my_tasks_list .icon-release {
+    font-family: roboto
+}
+#tasklist .icon-release:before,
+#my_tasks_list .icon-release:before {
+    font-family: freshicons;
+    content: "\f0e7";
+    color: #1292a6;
+    margin-left: -17px;
+    margin-right: 5px
+}
+.task_status_0 {
+    color: #9e0714
+}
+.task_status_1 {
+    color: #9e590f
+}
+.task_status_2 {
+    color: #1d9e1b
+}
+#my_tasks_list_open li,
+#my_tasks_list_inprogress li,
+#my_tasks_list_completed li {
+    border-bottom: 1px solid #DDD;
+    padding: 10px 0;
+    font-size: 13px
+}
+#my_tasks_list_open .task_input,
+#my_tasks_list_inprogress .task_input,
+#my_tasks_list_completed .task_input {
+    position: relative;
+    margin-right: 5px
+}
+#my_tasks_list_open .icon-problem,
+#my_tasks_list_inprogress .icon-problem,
+#my_tasks_list_completed .icon-problem {
+    font-family: roboto
+}
+#my_tasks_list_open .icon-problem:before,
+#my_tasks_list_inprogress .icon-problem:before,
+#my_tasks_list_completed .icon-problem:before {
+    font-family: freshicons;
+    content: "\e001";
+    color: #1292a6;
+    margin-right: 5px
+}
+#my_tasks_list_open .icon-change,
+#my_tasks_list_inprogress .icon-change,
+#my_tasks_list_completed .icon-change {
+    font-family: roboto
+}
+#my_tasks_list_open .icon-change:before,
+#my_tasks_list_inprogress .icon-change:before,
+#my_tasks_list_completed .icon-change:before {
+    font-family: freshicons;
+    content: "\e053";
+    color: #1292a6;
+    margin-right: 5px
+}
+#my_tasks_list_open .icon-ticket,
+#my_tasks_list_inprogress .icon-ticket,
+#my_tasks_list_completed .icon-ticket {
+    font-family: roboto
+}
+#my_tasks_list_open .icon-ticket:before,
+#my_tasks_list_inprogress .icon-ticket:before,
+#my_tasks_list_completed .icon-ticket:before {
+    font-family: freshicons;
+    content: "\e063";
+    color: #1292a6;
+    margin-right: 5px
+}
+#my_tasks_list_open .icon-release,
+#my_tasks_list_inprogress .icon-release,
+#my_tasks_list_completed .icon-release {
+    font-family: roboto
+}
+#my_tasks_list_open .icon-release:before,
+#my_tasks_list_inprogress .icon-release:before,
+#my_tasks_list_completed .icon-release:before {
+    font-family: freshicons;
+    content: "\f0e7";
+    color: #1292a6;
+    margin-right: 5px
+}
+#view-my-tasks-dialog .tab-content {
+    padding: 10px
+}
+.no-close .ui-dialog-titlebar-close {
+    display: none
+}
+.link-button {
+    width: 75px
+}
+.ui-dialog .ui-dialog-buttonpane button {
+    margin: 0 5px
+}
+#problem_link_existing_dialog,
+#change_link_existing_dialog {
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: scroll
+}
+#problem_link_existing_dialog textarea,
+#change_link_existing_dialog textarea {
+    height: 150px
+}
+#problem_link_existing_dialog .sort-item,
+#change_link_existing_dialog .sort-item {
+    padding: 3px
+}
+#problem_link_existing_dialog ul.link_results,
+#change_link_existing_dialog ul.link_results {
+    margin-top: 15px
+}
+#problem_link_existing_dialog ul.link_results li.header,
+#change_link_existing_dialog ul.link_results li.header {
+    background: #ccc;
+    color: #333;
+    font-weight: bold
+}
+#problem_link_existing_dialog ul.link_results li div,
+#change_link_existing_dialog ul.link_results li div {
+    float: left;
+    cursor: default;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 2px
+}
+#problem_link_existing_dialog ul.link_results li div.module_id,
+#change_link_existing_dialog ul.link_results li div.module_id {
+    width: 10%;
+    border-left: 1px solid #ccc
+}
+#problem_link_existing_dialog ul.link_results li div.module_title,
+#change_link_existing_dialog ul.link_results li div.module_title {
+    width: 67.2%
+}
+#problem_link_existing_dialog ul.link_results li div.module_status,
+#change_link_existing_dialog ul.link_results li div.module_status {
+    width: 20%;
+    font-style: italic
+}
+#problem_link_existing_dialog form,
+#change_link_existing_dialog form {
+    margin: 12px 0
+}
+#problem_link_existing_dialog form fieldset,
+#change_link_existing_dialog form fieldset {
+    float: left
+}
+#problem_link_existing_dialog form fieldset:first-child,
+#change_link_existing_dialog form fieldset:first-child {
+    width: 50%;
+    margin-right: 5%
+}
+#problem_link_existing_dialog form fieldset:last-child,
+#change_link_existing_dialog form fieldset:last-child {
+    width: 45%
+}
+#problem_link_existing_dialog form fieldset label,
+#change_link_existing_dialog form fieldset label {
+    display: inline-block
+}
+#problem_link_existing_dialog form fieldset input[type="text"],
+#change_link_existing_dialog form fieldset input[type="text"] {
+    max-width: 80%
+}
+.highlight {
+    background: #fff9bd;
+    color: #000
+}
+.sortVal {
+    display: block;
+    margin-top: 5px;
+    cursor: pointer;
+    width: 135px;
+    background: url(/images/symbols/drrow-down.png) no-repeat right
+}
+#sortOptions {
+    background: #fff;
+    width: 115px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px
+}
+#sortOptions .sort-selected,
+#sortOptions .sort-order-selected {
+    width: 20px;
+    height: 15px;
+    float: left;
+    background: url(/images/symbols-s068603a498.png) 0 -608px
+}
+#sortOptions .sortText {
+    width: 20px;
+    height: 15px;
+    float: left
+}
+#sortOptions li {
+    font-size: 13px
+}
+#sortOptions li:hover {
+    cursor: pointer;
+    background: #333;
+    color: #efefef
+}
+#link_to_search_box {
+    background: url(/images/symbols/search.png) no-repeat center right
+}
+.search-icon-area {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    background: transparent;
+    width: 25px;
+    height: 27px;
+    cursor: pointer
+}
+.linked_changes {
+    padding: 7px;
+    background: #fff9bd;
+    border: 1px solid #fff48a
+}
+.linked_changes div {
+    margin-bottom: 5px
+}
+.linked_changes h3 {
+    font-size: 14px;
+    margin-bottom: 4px
+}
+.linked_changes span {
+    margin-right: 10px
+}
+.linked_changes_container {
+    position: relative
+}
+.floating_menu {
+    border: 1px solid #ddd
+}
+.floating_menu li {
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer
+}
+.floating_menu li:hover {
+    background: #fff9bd
+}
+.associated_with {
+    box-sizing: border-box;
+    padding: 0 0 10px
+}
+.linked_details {
+    background: #FFF;
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+    padding: 10px
+}
+.linked_details h3 {
+    font-weight: bold
+}
+.linked_details section {
+    margin: 5px 0
+}
+.linked_details ul {
+    padding: 5px 0
+}
+.linked_details ul li span {
+    color: #999;
+    text-decoration: underline
+}
+.linked_details ul li a:first-child {
+    text-decoration: underline;
+    color: #999;
+    margin-right: 10px
+}
+#work_log .actions {
+    overflow: hidden;
+    *zoom: 1;
+    float: right;
+    margin-right: 0;
+    margin-top: -4px;
+    visibility: hidden
+}
+#work_log .actions a {
+    float: left;
+    margin-right: 5px
+}
+#work_log .description:hover .actions,
+#work_log .timeentry:hover .actions {
+    visibility: visible
+}
+#work_log .timeentry {
+    *zoom: 1;
+    position: relative;
+    margin: 0;
+    padding: 8px 25px 8px 70px;
+    border-bottom: 1px solid #f3f3f3
+}
+#work_log .timeentry:after {
+    content: "";
+    display: table;
+    clear: both
+}
+#work_log .timeentry .preview_pic {
+    margin-left: -50px;
+    margin-top: 1px;
+    margin-right: 5px
+}
+#work_log .timeentry .user_details {
+    font-style: italic;
+    color: #999;
+    padding-bottom: 6px
+}
+#work_log .timeentry .user_details a {
+    font-style: normal
+}
+.resolution_container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 10px 5px 0;
+    margin-bottom: 15px
+}
+.resolution_container .search-field {
+    width: 100%
+}
+.resolution_container .resolution_types label {
+    font-size: 16px;
+    font-family: "Roboto", Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #333;
+    padding-bottom: 10px
+}
+.resolution_container #new_solution_solution,
+.resolution_container #new_solution_workaround {
+    background: #f9f9f9
+}
+.resolution_container .dropdown label {
+    padding-bottom: 0
+}
+.resolution_container .dropdown .select2-container {
+    width: 200px
+}
+.resolution_container #new_solution {
+    width: 100%;
+    box-sizing: border-box
+}
+.resolution_container .live_search {
+    position: relative;
+    width: 100%
+}
+.resolution_container .new_resolution {
+    top: -4px;
+    position: relative
+}
+.resolution_container .new_solution_title {
+    font-weight: bold
+}
+.resolution_container .new_solution_title span {
+    color: #bbb;
+    font-weight: normal
+}
+.resolution_container .ui-form {
+    *zoom: 1;
+    margin: 0;
+    background: transparent;
+    border: 0;
+    padding-bottom: 0;
+    width: 97.2%;
+    padding: 10px
+}
+.resolution_container .ui-form:after {
+    content: "";
+    display: table;
+    clear: both
+}
+.resolution_container .ui-form .redactor_box {
+    border: 0;
+    border-radius: 5px;
+    padding: 0;
+    background: #f9f9f9
+}
+.resolution_container .ui-form .redactor_box .redactor_toolbar {
+    background: 0;
+    border-bottom: 0
+}
+.resolution_container .ui-form .redactor_editor {
+    background: #FFF!important;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #888 inset!important;
+    height: 150px!important
+}
+.resolution_container .ui-form .redactor_editor:focus {
+    background: #FFF!important
+}
+.resolution_container .ui-form li.dropdown {
+    width: 30%;
+    padding-bottom: 0
+}
+.resolution_container .ui-form li.button-list {
+    display: inline-block;
+    width: 30%;
+    float: right;
+    margin-top: 18px;
+    text-align: right;
+    padding-bottom: 0
+}
+.resolution_container .ui-form li.button-list input {
+    width: auto
+}
+.resolution_container .ui-form li input {
+    width: 98%
+}
+.resolution_container .ui-form li span.pull-right {
+    font-size: 14px;
+    color: #999
+}
+.resolution_container .ui-form li label.floatl {
+    padding-bottom: 0
+}
+.resolution_description {
+    box-sizing: border-box;
+    padding: 10px 0
+}
+.resolution_description h3 {
+    font-weight: bold;
+    font-size: 14px
+}
+.resolution_description h3 a {
+    visibility: hidden
+}
+.resolution_description:hover h3 a {
+    visibility: visible
+}
+.cabmember {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 5px 0
+}
+.cabmember>* {
+    margin: 0 5px
+}
+.cabmember label {
+    display: inline-block;
+    font-size: 13px;
+    margin-left: 4px;
+    position: relative;
+    top: 2px
+}
+.cabmember span {
+    position: relative;
+    top: 2px;
+    color: #aaa;
+    font-weight: 300;
+    margin: 0
+}
+.cabmember input {
+    display: inline-block
+}
+.approval_container {
+    width: 100%;
+    *zoom: 1
+}
+.approval_container:after {
+    content: "";
+    display: table;
+    clear: both
+}
+.approval {
+    float: left;
+    width: 70%
+}
+.properties_window {
+    width: 30%;
+    float: right;
+    box-sizing: border-box
+}
+.properties_window .change_status {
+    font-size: 1.5em;
+    color: #999
+}
+.properties_window .tab-content {
+    background: #fff;
+    border: 1px solid #ddd
+}
+.properties_window .tab-content .property_list {
+    *zoom: 1
+}
+.properties_window .tab-content .property_list:after {
+    content: "";
+    display: table;
+    clear: both
+}
+.properties_window .tab-content .property_list li {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px
+}
+.properties_window .tab-content .property_list li label {
+    color: #aaa;
+    text-transform: capitalize
+}
+.properties_window .tab-content .property_list li span {
+    font-size: 14px
+}
+.properties_window .tab-content div {
+    margin-top: 20px;
+    padding: 10px
+}
+.properties_window .property_tabs {
+    position: relative;
+    margin-top: 50px
+}
+.properties_window .request-well {
+    background: 0;
+    position: absolute;
+    top: -15px;
+    left: 100px
+}
+.properties_window .request-well .tabs {
+    padding: 0;
+    border: 0
+}
+.properties_window .request-well .tabs .active>a {
+    color: #fff;
+    background: #bbb
+}
+.properties_window .request-well .tabs>li>a {
+    color: #999;
+    width: 100px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-right: 0;
+    line-height: 24px;
+    font-size: 12px;
+    padding: 3px 7px;
+    text-align: center
+}
+.properties_window .request-well .tabs>li:first-child>a {
+    border-radius: 30px;
+    border: 1px solid #888;
+    box-shadow: 0 0 4px #888 inset
+}
+.approval_title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px
+}
+.approval_status {
+    padding: 5px;
+    min-width: 100px;
+    max-width: 175px;
+    margin-right: -40px
+}
+.approval_status span {
+    p
